@@ -18,7 +18,7 @@
       style=""
     >
      <a id="get-help-button" href="#contact-form"><text x="167" y="34" fill="white" font-size="13">Get help</text></a>
-     <text x="105" y="100" fill="green" font-size="12">Serving you in {{ serveText }}</text>
+     <text x="105" y="100" fill="#00ad8bff" font-size="12">Serving you in {{ serveText }}</text>
       <defs id="defs2">
         <linearGradient id="linearGradient4194">
           <stop
