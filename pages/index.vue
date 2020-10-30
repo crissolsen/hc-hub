@@ -1,7 +1,7 @@
 <template>
   <div id="page-wrapper">
     <TheNavBar />
-    <HeroImage />
+    <AnotherHero />
 
   </div>
 </template>

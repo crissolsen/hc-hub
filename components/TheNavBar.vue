@@ -1,13 +1,14 @@
 <template>
   <header>
     <nav>
-      <div id="nav-logo">
+     <NuxtLink to="/">
+       <div id="nav-logo">
         <svg
           id="Layer_1"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 942 504"
-          height="100"
+          height="110"
         >
           <defs>
             <style>
@@ -50,7 +51,8 @@
             d="M198.52,308.65h-2.88c-11.81.1-23-14-23-25.84V153.62a21,21,0,0,1,5.74-14.36L264.55,56c9.07-9.6,24.84-9.07,34.45,0L405.22,162.23l-19.77.58a40.48,40.48,0,0,1-25.56-10.44L296.13,87.58c-6.88-6.23-22.35-6.75-28.71,0L206.57,149c-3.78,4-8,10.54-8,16.06Z"
           />
         </svg>
-      </div>
+       </div>
+     </NuxtLink>
       <div v-show="!mobile" id="link-wrapper">
         <NuxtLink to="/education">Education</NuxtLink>
         <NuxtLink to="/webdev">Web Development</NuxtLink>
@@ -67,7 +69,7 @@
          <div v-show= "mobileMenu" id="mobile-links">
             <NuxtLink to="/education">Education</NuxtLink>
             <NuxtLink to="/webdev">Web Development</NuxtLink>
-            <a id="contact-button" href="#contact-form">I can help!</a>
+            <a id="contact-button" href="/#contact-form">I can help!</a>
          </div>
         </transition>
       </div>
@@ -122,15 +124,15 @@ nav {
   grid-template-columns: 1fr 2fr;
   width: 100%;
 }
-#nav-logo {
-    justify-self: center;
+#nav-logo{
+    display: flex;
+    justify-content: center;
 }
 #link-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 #link-wrapper a {
   background: #00735cff;
   padding: 1em;
@@ -140,25 +142,22 @@ nav {
   margin-left: 1em;
   box-shadow: 5px 5px 2px 2px #606462ff;
   font-weight: 800;
+  border: 2px solid black;
 }
-
 #contact-button {
   background: #f7872c !important;
   color: black !important;
   border: 2px solid black !important;
 }
-
 #mobile-link-wrapper {
     align-self: center;
     justify-self: center;
 }
-
 #mobile-links {
     display: flex;
     flex-direction: column;
     margin-right: 1em;
 }
-
 #mobile-links a {
   background: #00735cff;
   padding: 0.5em;
