@@ -51,43 +51,130 @@
           />
         </svg>
       </div>
-      <div id="link-wrapper">
+      <div v-show="!mobile" id="link-wrapper">
         <NuxtLink to="/education">Education</NuxtLink>
         <NuxtLink to="/webdev">Web Development</NuxtLink>
-        <a id="contact-button" href="#contact-form">Let's Chat</a>
+        <a id="contact-button" href="#contact-form">I can help!</a>
+      </div>
+      
+      <div v-show= "mobile" id="mobile-link-wrapper" @click= "mobileMenu = !mobileMenu">
+        <svg v-show= "!mobileMenu" viewBox="0 0 100 80" width="40" height="40">
+          <rect width="100" height="20" rx="8" fill="#00735cff"></rect>
+          <rect y="30" width="100" height="20" rx="8" fill="#00735cff"></rect>
+          <rect y="60" width="100" height="20" rx="8" fill="#00735cff"></rect>
+        </svg>
+        <transition name= "fade">
+         <div v-show= "mobileMenu" id="mobile-links">
+            <NuxtLink to="/education">Education</NuxtLink>
+            <NuxtLink to="/webdev">Web Development</NuxtLink>
+            <a id="contact-button" href="#contact-form">I can help!</a>
+         </div>
+        </transition>
       </div>
     </nav>
   </header>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      mobile: false,
+      mobileMenu: false,
+    };
+  },
+  mounted() {
+      this.myEventHandler
+  },
+  created() {
+    if (window.innerWidth > 768) {
+        this.mobile = false;
+      } else {
+        this.mobile = true;
+      }
+    window.addEventListener("resize", this.myEventHandler)
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.myEventHandler);
+  },
+  methods: {
+    myEventHandler(e) {
+      if (window.innerWidth > 768) {
+        this.mobile = false;
+      } else {
+        this.mobile = true;
+      }
+    },
+    screenSizeCheck() {
+        if (window.innerWidth > 768) {
+        this.mobile = false;
+      } else {
+        this.mobile = true;
+      }
+    }
+  },
+};
+</script>
+
 <style scoped>
 nav {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+}
+#nav-logo {
+    justify-self: center;
 }
 #link-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #link-wrapper a {
-    background: #00735cff;
-    padding: 1em;
-    border-radius: 10px;
-    color: white;
-    text-decoration: none;
-    margin-left: 1em;
-    box-shadow: 5px 5px 2px 2px #606462ff;
-    font-weight: 800;
+  background: #00735cff;
+  padding: 1em;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  margin-left: 1em;
+  box-shadow: 5px 5px 2px 2px #606462ff;
+  font-weight: 800;
 }
 
 #contact-button {
-    background: #F7872C !important;
-    color: black !important;
-    border: 2px solid black !important;
+  background: #f7872c !important;
+  color: black !important;
+  border: 2px solid black !important;
 }
 
+#mobile-link-wrapper {
+    align-self: center;
+    justify-self: center;
+}
+
+#mobile-links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+}
+
+#mobile-links a {
+  background: #00735cff;
+  padding: 0.5em;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 5px 5px 2px 2px #606462ff;
+  border: 1px solid black;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.25s ease-out;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
 
 </style>
