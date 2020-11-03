@@ -3,7 +3,7 @@
     <div id="education-title">
         <h1>Education</h1>
         <div id="edu-nav-wrapper">
-          <a href="/"><div class="nav-button">Education Blog</div></a>
+          <a href="/blog"><div class="nav-button">Education Blog</div></a>
           <a href="/"><div class="nav-button">Coding and Robotics Store</div></a>
           <a href="/"><div class="nav-button">Online Coding Courses</div></a>
         </div>
@@ -68,9 +68,10 @@ export default {
         return {
             spaceURI: "https://www.udemy.com/course/space-explorers-coding-course-for-kids/?referralCode=DE8D3C487174A5BF372D",
             parentURI: "https://www.udemy.com/course/homecodeparents/?referralCode=9CF8785ED8A56A6FED8F",
-            hcShopURI: "https://homecode.shop"
+            hcShopURI: "https://homecode.shop",
         }
     }
+     
 }
 </script>
 
