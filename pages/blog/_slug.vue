@@ -3,14 +3,14 @@
     <TheNavBar />
     <main>
       <div id="blog-title">
-          <img :src= "post.img" alt= "post.alt" >
         <h1>{{ post.title }}</h1>
         
       </div>
       
        <nuxt-content :document= "post" />
        <p> Post created on {{ formatDate(post.createdAt) }} by {{ post.author.name }}</p>
-    </main>   
+    </main>
+      <AllPosts />
     </div>
 </template>
 
@@ -37,24 +37,7 @@ export default {
     width: 90%;
     margin: 0 auto;
   }
-
-  #blog-title {
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    perspective: 8px;
-    perspective-origin: 0%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #blog-title img{
-    z-index: -1;
-    position: fixed;
-    width: 100%;
-    opacity: 30%;
-  }
-
+  
   #blog-title h1 {
     color: black;
     text-align: center;

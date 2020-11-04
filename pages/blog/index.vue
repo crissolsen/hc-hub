@@ -63,7 +63,6 @@ export default {
     filterResults(category) {
       this.filteredPosts = [];
       this.postCategory = category;
-      console.log(this.post);
       for (let i = 0; i < this.post.length; i++) {
         if (this.post[i].category === this.postCategory) {
           this.filteredPosts.push(this.post[i]);
@@ -120,7 +119,7 @@ export default {
 
     .post-preview-block {
         padding: 1em;
-        box-shadow: 2px 0.5em 0.2em rgba(0,115,92,1);
+        box-shadow: 2px 0.5em 0.5em rgba(0,115,92,1);
         border-bottom-right-radius: 5em;
     }
 

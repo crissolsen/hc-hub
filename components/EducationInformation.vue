@@ -3,9 +3,9 @@
     <div id="education-title">
         <h1>Education</h1>
         <div id="edu-nav-wrapper">
-          <a href="/blog"><div class="nav-button">Education Blog</div></a>
-          <a href="/"><div class="nav-button">Coding and Robotics Store</div></a>
-          <a href="/"><div class="nav-button">Online Coding Courses</div></a>
+          <NuxtLink :to="`/blog`"><div class="nav-button">Education Blog</div></NuxtLink>
+          <a href="https://homecode.shop" target="_blank"><div class="nav-button">Coding and Robotics Store</div></a>
+          <a href="#online-courses"><div class="nav-button">Online Coding Courses</div></a>
         </div>
       </div>
       <article>
@@ -22,7 +22,7 @@
       </article>
     <div id="education-information-container">
       <article>
-          <div class="education-content">
+          <div class="education-content" id="online-courses">
               <h2><a :href= "spaceURI" rel="noreferrer" target="_blank"> Space Explorers Coding Course for Kids</a></h2>
               <p>When our children are able to follow their interests and have fun, they learn more. We'll be creating programs, games and even art using the free coding tool, Scratch.
                   <br>
@@ -78,6 +78,10 @@ export default {
 <style scoped>
   h1 {
     font-size: 3em;
+  }
+
+  p {
+    line-height: 1.8em;
   }
 
   #education-title {
