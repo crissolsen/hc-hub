@@ -6,16 +6,21 @@
         <h1>{{ post.title }}</h1>
         
       </div>
-      
+
        <nuxt-content :document= "post" />
        <p> Post created on {{ formatDate(post.createdAt) }} by {{ post.author.name }}</p>
     </main>
-      <AllPosts />
+    <AllPosts />
     </div>
 </template>
 
 <script>
 export default {
+    async asyncData({ $content, params }) {
+      const allPosts = await $content('posts').fetch()
+
+      return { allPosts }
+    },
     async asyncData({ $content, params }) {
       const post = await $content('posts', params.slug).fetch()
 

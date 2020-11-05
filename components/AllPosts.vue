@@ -16,17 +16,17 @@
 export default {
   data() {
     return {
-      allPosts: [],
-      footerPosts: []
+      allPosts: []
     }
   },
-  modules: 
-    [ 
-      '@nuxt/content' 
-    ],
-    async AsyncData({ $content, params }) { 
-      this.allPosts = await context.$content("posts", params.slug).fetch()
-      .catch(err => console.error(err))
+    created() {
+      console.log("seeing this?")
+      const articles = fetch("/_content/posts")
+      .then(res => res.json())
+      .then(data => this.allPosts = data)
+      return {
+        articles
+      }
     },
   computed: {
     filteredPosts() {

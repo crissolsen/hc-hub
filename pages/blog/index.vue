@@ -9,7 +9,7 @@
         <div
           class="blog-category-choose-button"
           @click="filterResults('thinkingSkills')"
-        >Thinking Skills</div>
+        ><span>Thinking Skills</span></div>
         <div
           class="blog-category-choose-button"
           @click="filterResults('codingRobotics')"
@@ -40,7 +40,7 @@ export default {
     };
   },
   async asyncData({ $content, params }) {
-    const post = await context.$content("posts", params.slug)
+    const post = await $content("posts", params.slug)
       .only([
         "title",
         "description",
@@ -95,7 +95,8 @@ export default {
 
     #blog-buttons-wrapper {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-items: space-between;
     }
 
     .blog-category-choose-button {
@@ -107,6 +108,8 @@ export default {
         border: 2px solid black;
         color: white;
         box-shadow: 1px 3px 5px gray;
+        display: flex;
+        align-items: center;
     }
 
     #post-list-display {
