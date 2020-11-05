@@ -40,7 +40,7 @@ export default {
     };
   },
   async asyncData({ $content, params }) {
-    const post = await $content("posts", params.slug)
+    const post = await context.$content("posts", params.slug)
       .only([
         "title",
         "description",
