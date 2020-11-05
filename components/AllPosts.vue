@@ -20,9 +20,8 @@ export default {
     }
   },
     created() {
-      console.log("seeing this?")
-      const articles = fetch("`/_content/posts`")
-      .then(res => res.json())
+      const articles = fetch("/_content/posts")
+      .then(res => res.text())
       .then(data => this.allPosts = data)
       return {
         articles
