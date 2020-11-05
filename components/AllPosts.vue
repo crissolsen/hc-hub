@@ -21,7 +21,7 @@ export default {
   },
     created() {
       console.log("seeing this?")
-      const articles = fetch("/_content/posts")
+      const articles = fetch("`/_content/posts`")
       .then(res => res.json())
       .then(data => this.allPosts = data)
       return {
