@@ -17,8 +17,8 @@
       sodipodi:docname="MainTreeback.svg"
       style=""
     >
-     <a id="get-help-button" href="#contact-form"><text x="167" y="34" fill="white" font-size="13">Get help</text></a>
-     <text x="105" y="100" fill="#00ad8bff" font-size="12">Serving you in {{ serveText }}</text>
+     <NuxtLink id="get-help-button" :to= "`/contact-form`"><text x="167" y="34" fill="white" font-size="12">Get help</text></NuxtLink>
+     <text x="105" y="100" fill="#00ad8bff" font-size="12">Life's better with {{ serveText }}</text>
       <defs id="defs2">
         <linearGradient id="linearGradient4194">
           <stop

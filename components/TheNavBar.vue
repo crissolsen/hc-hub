@@ -9,7 +9,7 @@
       <div v-show="!mobile" id="link-wrapper">
         <NuxtLink to="/education">Education</NuxtLink>
         <NuxtLink to="/webdev">Web Development</NuxtLink>
-        <a id="contact-button" href="#contact-form">I can help!</a>
+        <NuxtLink id="contact-button" :to= "`/contact-form`">We can help!</NuxtLink>
       </div>
       
       <div v-show= "mobile" id="mobile-link-wrapper" @click= "mobileMenu = !mobileMenu">
@@ -22,7 +22,7 @@
          <div v-show= "mobileMenu" id="mobile-links">
             <NuxtLink to="/education">Education</NuxtLink>
             <NuxtLink to="/webdev">Web Development</NuxtLink>
-            <a id="contact-button" href="/#contact-form">I can help!</a>
+            <NuxtLink id="contact-button" :to= "`/contact-form`">We can help!</NuxtLink>
          </div>
         </transition>
       </div>

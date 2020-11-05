@@ -17,12 +17,15 @@ export default {
   data() {
     return {
       allPosts: [],
-      footerPosts: [],
+      footerPosts: []
     }
   },
-    async fetch() {
-      this.allPosts = await fetch("/_content/posts")
-      .then(res => res.json())
+  modules: 
+    [ 
+      '@nuxt/content' 
+    ],
+    async AsyncData({ $content, params }) { 
+      this.allPosts = await context.$content("posts", params.slug).fetch()
       .catch(err => console.error(err))
     },
   computed: {
