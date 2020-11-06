@@ -9,7 +9,7 @@
         <div
           class="blog-category-choose-button"
           @click="filterResults('thinkingSkills')"
-        ><span>Thinking Skills</span></div>
+        >Thinking Skills</div>
         <div
           class="blog-category-choose-button"
           @click="filterResults('codingRobotics')"
@@ -109,7 +109,9 @@ export default {
         color: white;
         box-shadow: 1px 3px 5px gray;
         display: flex;
+        justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
 
     #post-list-display {
