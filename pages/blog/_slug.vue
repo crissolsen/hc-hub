@@ -34,7 +34,8 @@
 export default {
     async asyncData({ $content, params }) {
       const post = await $content('posts', params.slug).fetch()
-      const allPosts = await $content('posts').fetch()
+      const allPosts = await $content('posts')
+      .fetch()
 
       return { post, allPosts }
     },

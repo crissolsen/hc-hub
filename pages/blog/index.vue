@@ -1,6 +1,7 @@
 <template>
     <div>
     <TheNavBar />
+    <BlogSearchInput />
     <main id="page-wrapper">
       <div id="main-blog-title">
         <h1>Educational Blog Posts</h1>

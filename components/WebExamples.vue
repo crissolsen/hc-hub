@@ -6,7 +6,7 @@
     <div id="examples-container">
         <div class="example-card">
             <h3>Prince of Tarts Wholesale Ordering Web App</h3>
-            <img src="https://res.cloudinary.com/dvwsiufhl/image/upload/h_400,dpr_auto,f_auto,q_auto/v1604571970/homeCode/POT_WebApp_SignIn_bb7iad.jpg" alt="Prince of tarts site example" >
+            <img src="https://res.cloudinary.com/dvwsiufhl/image/upload/h_300,dpr_auto,f_auto,q_auto/v1604571970/homeCode/POT_WebApp_SignIn_bb7iad.jpg" alt="Prince of tarts site example" >
             <p>Prince of Tarts was spending too much time getting orders through WhatsApp and then manually generating invoices and orders in SageOne</p>
             <p>We built their web app from the ground up. It allows their wholesale customers to sign in, view only selected products, view when delivery should happen, generate their invoice and email that invoice to Prince of Tarts and the customer</p>
             <p>In summary: NodeJS web app linked with the SageOne API, deployed on Heroku. </p>
@@ -43,8 +43,9 @@
     }
     #examples-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        grid-column-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-row-gap: 1em;
+        justify-items: center;
     }
     .example-card {
         border: 0.8em solid rgba(0,115,92,0.3);
@@ -54,6 +55,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 100%;
     }
     .example-card img {
         align-self: center;
@@ -76,7 +79,7 @@
         box-shadow: 5px 5px 2px 2px #606462ff;
         border-radius: 1em;
         font-weight: 800;
-        font-size: 1.2em;
+        font-size: 1em;
         color: black;
     }
 </style>
