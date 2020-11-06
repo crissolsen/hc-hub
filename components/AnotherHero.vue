@@ -17,8 +17,8 @@
       sodipodi:docname="MainTreeback.svg"
       style=""
     >
-     <NuxtLink id="get-help-button" :to= "`/contact-form`"><text x="167" y="34" fill="white" font-size="12">Get help</text></NuxtLink>
-     <text x="105" y="100" fill="#00ad8bff" font-size="12">Life's better with {{ serveText }}</text>
+     <NuxtLink id="get-help-button" :to= "`/contact-form`"><text x="170" y="32" fill="white" font-size="12">Get help</text></NuxtLink>
+     <text x="105" y="100" fill="rgba(0,115,92,1)" font-size="12">Life's better with {{ serveText }}</text>
       <defs id="defs2">
         <linearGradient id="linearGradient4194">
           <stop
@@ -268,7 +268,7 @@
             inkscape:connector-curvature="0"
             class="KxTuFKol_6"
           ></path>
-          <a href="#"><path
+          <NuxtLink :to="`/contact-form`"><path
             inkscape:connector-curvature="0"
             id="rect4438"
             d="m 1007.7892,981.45277 c -13.1215,0 -23.6877,10.56608 -23.6877,23.68763 0,0.3749 0.018,0.736 0.034,1.1065 h -25.9698 c -13.7463,0 -24.8288,11.0825 -24.8288,24.8288 0,13.7464 11.0825,24.7942 24.8288,24.7942 h 295.49 c 13.7464,0 24.8288,-11.0478 24.8288,-24.7942 0,-13.7463 -11.0824,-24.8288 -24.8288,-24.8288 h -82.3708 c 0.017,-0.3705 0.034,-0.7316 0.034,-1.1065 0,-13.12155 -10.566,-23.68763 -23.6875,-23.68763 h -139.8433 z"
@@ -280,8 +280,8 @@
               fill:  #f7872c;
               fill-opacity: 1;
               fill-rule: nonzero;
-              stroke:  #606462ff;
-              stroke-width: 11;
+              stroke:  #000;
+              stroke-width: 5;
               stroke-linecap: round;
               stroke-linejoin: miter;
               stroke-miterlimit: 4;
@@ -289,7 +289,7 @@
               marker: none;
             "
             class="KxTuFKol_7"
-          ></path></a>
+          ></path></NuxtLink>
           <g
             id="g1102"
             transform="matrix(1.7931426,0,0,1.8877856,999.13259,1365.5581)"
