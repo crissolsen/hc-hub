@@ -19,14 +19,6 @@ export default {
       allPosts: []
     }
   },
-    created() {
-      const articles = fetch("/content/posts")
-      .then(res => res.json())
-      .then(data => this.allPosts = data)
-      return {
-        articles
-      }
-    },
   computed: {
     filteredPosts() {
       //randomly choose three or less posts to display at the bottom.

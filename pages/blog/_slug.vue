@@ -10,29 +10,48 @@
        <nuxt-content :document= "post" />
        <p> Post created on {{ formatDate(post.createdAt) }} by {{ post.author.name }}</p>
     </main>
-    <AllPosts />
+    <div>
+      <h2 id="more-posts">More posts you'll love</h2>
+      <footer>
+        <NuxtLink v-for= "i in filteredPosts" :key= "i.slug" :to= "`/blog/${i.slug}`">
+          <div class="blog-post-blocks">
+          <h3> {{ i.title }} </h3>
+          <p> {{ i.description }} </p>
+          </div>
+          </NuxtLink>
+        
+      </footer>
+      <NuxtLink :to= "`/blog`" id="back-block-text">
+        <div id="back-block">
+         Back to all posts
+         </div>
+      </NuxtLink>
+    </div>
     </div>
 </template>
 
 <script>
 export default {
     async asyncData({ $content, params }) {
+      const post = await $content('posts', params.slug).fetch()
       const allPosts = await $content('posts').fetch()
 
-      return { allPosts }
-    },
-    async asyncData({ $content, params }) {
-      const post = await $content('posts', params.slug).fetch()
-
-      return { post }
+      return { post, allPosts }
     },
     methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
     }
-   }
+   },
+    computed: {
+    filteredPosts() {
+      //randomly choose three or less posts to display at the bottom.
+    let tempNumberForChoosingRandomPosts = Math.floor(Math.random() * (this.allPosts.length))
+    return this.allPosts.slice(tempNumberForChoosingRandomPosts,(tempNumberForChoosingRandomPosts+2))
   }
+  }
+}
 </script>
 
 <style>
@@ -71,6 +90,52 @@ export default {
     display: flex;
     justify-content: center;
 
+  }
+
+   #more-posts {
+    text-align: center;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    justify-items: center;
+    width: 100%;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .blog-post-blocks {
+    padding: 1em;
+    box-shadow: 2px 0.5em 0.5em rgba(0,115,92,1);
+    border-bottom-right-radius: 3em;
+    margin-bottom: 0.5em;
+  }
+
+  .blog-post-blocks h3 {
+    color: green;
+    text-decoration: none;
+  }
+
+  #back-block {
+    align-self: center;
+    margin: 1em;
+    text-align: center;
+    background: rgba(0,115,92,1);
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0.2em 0.2em 0.3em gray;
+  }
+
+  #back-block-text {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3em;
   }
 
 </style>
