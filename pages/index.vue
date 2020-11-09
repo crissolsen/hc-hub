@@ -2,6 +2,8 @@
   <div id="page-wrapper">
     <TheNavBar />
     <AnotherHero />
+    <MailChimpSignUp />
+    <SocialMediaLogos />
 
   </div>
 </template>
@@ -13,5 +15,7 @@ export default {
 </script>
 
 <style>
-
+  html {
+    overflow-x: hidden;
+  }
 </style>

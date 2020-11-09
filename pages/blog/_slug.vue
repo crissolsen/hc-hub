@@ -10,6 +10,10 @@
        <nuxt-content :document= "post" />
        <p> Post created on {{ formatDate(post.createdAt) }} by {{ post.author.name }}</p>
     </main>
+    <!-- Come back to the facebook sharing -->
+    <!-- <a :href= "`https://www.facebook.com/sharer/sharer.php?u=practical-bhabha-ba25eb.netlify.app/blog/`" target="_blank">
+  Share to Facebook
+</a> -->
     <div>
       <h2 id="more-posts">More posts you'll love</h2>
       <footer>
@@ -34,8 +38,8 @@
 export default {
     async asyncData({ $content, params }) {
       const post = await $content('posts', params.slug).fetch()
-      const allPosts = await $content('posts')
-      .fetch()
+      const allPosts = await $content('posts').fetch()
+
 
       return { post, allPosts }
     },
@@ -47,10 +51,13 @@ export default {
    },
     computed: {
     filteredPosts() {
-      //randomly choose three or less posts to display at the bottom.
+      //randomly choose two or less posts to display at the bottom.
     let tempNumberForChoosingRandomPosts = Math.floor(Math.random() * (this.allPosts.length))
     return this.allPosts.slice(tempNumberForChoosingRandomPosts,(tempNumberForChoosingRandomPosts+2))
-  }
+    },
+    facebookSharing() {
+      return "https://www.facebook.com/sharer/sharer.php?u=practical-bhabha-ba25eb.netlify.app/blog/"
+    }
   }
 }
 </script>

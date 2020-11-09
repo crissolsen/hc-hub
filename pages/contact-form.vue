@@ -2,12 +2,12 @@
 <div>
     <TheNavBar />
     <div id="choose-form">
-        <div class="choose-button" @click= "formDisplay('education')">Education</div>
-        <div class="choose-button" @click= "formDisplay">Web Development</div>
+        <div class="choose-button" @click= "education = !education, web = false" >Education</div>
+        <div class="choose-button" @click= "web = !web, education = false" >Web Development</div>
     </div>
-  <div id="form-education">
+  <div v-show= "education" id="form-education">
     <h1 class="title">
-      Contact
+      Education Enquiry Form
     </h1>
     <div class="content">
       <form name="contact" action="" method="post">
@@ -27,7 +27,7 @@
       </form>
     </div>
   </div>
-  <h1> {{formType}}</h1>
+  <h1> {{ education }}</h1>
   </div>
 </template>
 
@@ -35,12 +35,8 @@
 export default {
     data() {
         return {
-            formType: ""
-        }
-    },
-    methods: {
-        formDisplay(type) {
-           return this.formType = type
+            education: false,
+            web: false,
         }
     }
 }

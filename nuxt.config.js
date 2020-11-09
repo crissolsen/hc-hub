@@ -1,3 +1,5 @@
+import { $content } from "@nuxt/content"
+
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
@@ -15,10 +17,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/ico', href: 'https://res.cloudinary.com/dvwsiufhl/image/upload/f_ico,w_10/v1604046275/homeCode/HOMECODE_logo-03_qttemw.png' }
-    ],
-    script: [
-      {  id:"mcjs", src="https://chimpstatic.com/mcjs-connected/js/users/b12be6ea5a17c202cd54fba61/4e402ea0cc75054b21b56ba66.js" }
-      
     ]
 
   },
@@ -49,5 +47,18 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+
+  generate: {
+    routes() {
+      return $content('posts')
+      .only(['slug'])
+      .then(res => {
+        return res.data.map(post => {
+          return '/blog/' + post.slug
+        })
+      })
+      .fetch()
+    }
   }
 }

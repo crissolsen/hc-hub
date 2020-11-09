@@ -55,7 +55,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        flex-wrap: wrap;
         max-width: 100%;
     }
     .example-card img {

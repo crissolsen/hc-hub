@@ -6,6 +6,7 @@
           <NuxtLink :to="`/blog`"><div class="nav-button">Education Blog</div></NuxtLink>
           <a href="https://homecode.shop" target="_blank"><div class="nav-button">Coding and Robotics Store</div></a>
           <a href="#online-courses"><div class="nav-button">Online Coding Courses</div></a>
+          <a href="#lesson-plans"><div class="nav-button">Lesson Plans</div></a>
         </div>
       </div>
       <article>
@@ -47,6 +48,15 @@
                   and see how excellent it can be for problem solving. Each kit comes with a full online course for free.
               </p>
               <a :href="hcShopURI"><div class="edu-button">Browse the Store</div></a>
+         </div>
+      </article>
+      <article>
+          <div class="education-content" id="lesson-plans">
+              <h2><a href= "https://teachingresources.co.za/vendors/mr-os-homecode-store/" rel="noreferrer" target="_blank">Lesson Plans</a></h2>
+              <p>You don't have to be an expert to run a lesson that uses coding to make thinking visible! We've made lesson plans that accompany <a href="https://www.youtube.com/channel/UCUtv80PwqNDHfvSMPcAXR_g" rel="noreferrer" target= "_blank">YouTube video tutorials</a> that you can purchase (for nice and cheap). If you've got a 
+                topic and want some help, <a href= "/contact-form" rel="noreferrer" target="_blank">give us a shout and we'll help</a>.
+              </p>
+              <a href="https://teachingresources.co.za/vendors/mr-os-homecode-store/" target="_blank" rel="noreferrer"><div class="edu-button">Lesson Plans</div></a>
          </div>
       </article>
       <article>
@@ -109,7 +119,8 @@ export default {
   }
   #education-information-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    width: 90%;
+    margin: 0 auto;
     grid-column-gap: 2em;
     grid-row-gap: 1em;
     padding-bottom: 1em;
@@ -122,6 +133,9 @@ export default {
     padding: 2em;
     box-shadow: 2px 10px 10px gray;
     line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .education-heads {
