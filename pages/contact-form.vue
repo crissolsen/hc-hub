@@ -6,7 +6,7 @@
       Enquiry Form
     </h1>
     <div class="content">
-      <form name="contact" action="/" method="POST" netlify>     
+      <form name="contact" action="/thanks" method="POST" @submit.prevent= "submitted=!submitted" netlify>     
         <label class="form-label" for="name">
           Name:
         </label>
@@ -23,7 +23,7 @@
       </form>
     </div>
   </div>
-
+  <div v-else>Thank you for submitting</div>
   </div>
 </template>
 
