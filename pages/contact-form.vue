@@ -1,15 +1,12 @@
 <template>
 <div>
     <TheNavBar />
-  <div id="form-wrapper">
+  <div id="form-wrapper" v-if= "!submitted">
     <h1 class="form-title">
       Enquiry Form
     </h1>
     <div class="content">
-      <form name="contact" action="/thanks" method="post" netlify-honeypot="hpfield" netlify>     
-        <div class="hpot">
-          <label>Leave this field empty: <input name="hpfield"></label>
-         </div>
+      <form name="contact" action="/thanks" method="POST" netlify>     
         <label class="form-label" for="name">
           Name:
         </label>
@@ -17,21 +14,26 @@
         <label class="form-label" for="email">
           Email:
         </label>
-        <input class="form-field" name="email" id="email" />
+        <input class="form-field" name="_replyto" id="email" />
         <label class="form-label" for="message">
-          Message:
+          How can we help?:
         </label>
         <textarea class="form-field" name="message" id="message"></textarea>
-        <button class="form-button" type="submit" value="Send message">Send Message</button>
+        <button class="form-button" type="submit" >Send Message</button>
       </form>
     </div>
   </div>
+
   </div>
 </template>
 
 <script>
 export default {
-
+  data() {
+    return {
+      submitted: false
+    }
+  }
 }
 </script>
 
