@@ -53,12 +53,13 @@ export default {
   build: {},
 
   generate: {
-    async ready() {
+    async routes() {
       const { $content } = require("@nuxt/content");
-      const files = await $content()
-        .only(["slug"])
+      const files = await $content({ deep: true })
+        .only(["path"])
         .fetch();
-      console.log(files);
+
+      return files.map(file => (file.path === "/index" ? "/" : file.path));
     }
   }
 };
