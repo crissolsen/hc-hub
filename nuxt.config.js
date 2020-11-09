@@ -53,6 +53,12 @@ export default {
   build: {},
 
   generate: {
-    routes: ["/blog/brave-parenting"]
+    async ready() {
+      const { $content } = require("@nuxt/content");
+      const files = await $content()
+        .only(["slug"])
+        .fetch();
+      console.log(files);
+    }
   }
 };
