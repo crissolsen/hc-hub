@@ -1,16 +1,15 @@
 <template>
 <div>
     <TheNavBar />
-    <div id="choose-form">
-        <div class="choose-button" @click= "education = !education, web = false" >Education</div>
-        <div class="choose-button" @click= "web = !web, education = false" >Web Development</div>
-    </div>
-  <div v-show= "education" id="form-education">
-    <h1 class="title">
-      Education Enquiry Form
+  <div id="form-wrapper">
+    <h1 class="form-title">
+      Enquiry Form
     </h1>
     <div class="content">
-      <form name="contact" action="" method="post">
+      <form name="contact" action="/thank-you" method="post" netlify-honeypot="bot-field" netlify>
+        <p class="hidden">     
+        <label>Don’t fill this out: <input name="bot-field"></label></p>
+        <input type="hidden" name="form-name" value="contact" />
         <label class="form-label" for="name">
           Name:
         </label>
@@ -27,24 +26,74 @@
       </form>
     </div>
   </div>
-  <h1> {{ education }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            education: false,
-            web: false,
-        }
-    }
+
 }
 </script>
 
 <style scoped>
-    .choose-button {
-        cursor: pointer;
+    #form-wrapper {
+      width: 80%;
+      margin: 0.5em auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1em;
+    }
+    h1 {
+      text-align: center;
+      color: rgba(0,115,92,1)
+    }
+    #form-wrapper label {
+      display: block;
+      font-size: 1.2em;
+      line-height: 1.4em;
+      margin-bottom: 0.5em;
+      margin-top: 0.5em;
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      box-shadow: 1em 1em 2em gray;
+      padding: 0.5em;
+      border-radius: 2em;
+      padding-bottom: 2em;
+    }
+    .content form {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .content input {
+      height: 2em;
+      border: 0.2em solid gray;
+      border-radius: 0.5em;
+    }
+
+    .content textarea {
+      height: 10em;
+      border: 0.2em solid gray;
+      border-radius: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    .form-button {
+      font-family: inherit;
+      height: 1.5em;
+      background: rgba(0,115,92,1);
+      color: white;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
     }
 </style>
 
