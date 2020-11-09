@@ -17,7 +17,7 @@ export default {
       { rel: 'icon', type: 'image/ico', href: 'https://res.cloudinary.com/dvwsiufhl/image/upload/f_ico,w_10/v1604046275/homeCode/HOMECODE_logo-03_qttemw.png' }
     ],
     script: [
-      {  id:"mcjs", content: '!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b12be6ea5a17c202cd54fba61/4e402ea0cc75054b21b56ba66.js")' }
+      {  id:"mcjs", src="https://chimpstatic.com/mcjs-connected/js/users/b12be6ea5a17c202cd54fba61/4e402ea0cc75054b21b56ba66.js" }
       
     ]
 
