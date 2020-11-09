@@ -6,9 +6,8 @@
       Enquiry Form
     </h1>
     <div class="content">
-      <form name="contact" action="thanks" method="post" netlify-honeypot="bot-field" data-netlify="true">
-        <p class="hidden">     
-        <label>Don’t fill this out: <input name="bot-field"></label></p>
+      <form name="contact" action="/thanks" method="post" netlify-honeypot="bot-field" netlify>     
+        <input name="bot-field" class="hidden">
         <input type="hidden" name="form-name" value="contact" />
         <label class="form-label" for="name">
           Name:
