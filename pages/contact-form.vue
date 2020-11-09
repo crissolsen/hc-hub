@@ -6,9 +6,10 @@
       Enquiry Form
     </h1>
     <div class="content">
-      <form name="contact" action="/thanks" method="post" netlify-honeypot="bot-field" netlify>     
-        <input name="bot-field" class="hidden">
-        <input type="hidden" name="form-name" value="contact" />
+      <form name="contact" action="/thanks" method="post" netlify-honeypot="hpfield" netlify>     
+        <div class="hpot">
+          <label>Leave this field empty: <input name="hpfield"></label>
+         </div>
         <label class="form-label" for="name">
           Name:
         </label>
@@ -91,7 +92,7 @@ export default {
       cursor: pointer;
     }
 
-    .hidden {
+    .hpot {
       display: none;
     }
 </style>
