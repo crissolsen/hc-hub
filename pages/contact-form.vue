@@ -6,24 +6,29 @@
       Enquiry Form
     </h1>
     <div class="content">
-      <form name="contact" action="/thanks" method="POST" @submit.prevent= "submitted=!submitted" netlify>     
+      <form name="contact"  @submit.stop.prevent= "submit" netlify>     
         <label class="form-label" for="name">
           Name:
         </label>
-        <input class="form-field" name="name" id="name" />
+        <input class="form-field" name="name" id="name" v-model= "name"/>
         <label class="form-label" for="email">
           Email:
         </label>
-        <input class="form-field" name="_replyto" id="email" />
+        <input class="form-field" name="_replyto" id="email" v-model= "email" />
         <label class="form-label" for="message">
           How can we help?
         </label>
-        <textarea class="form-field" name="message" id="message"></textarea>
-        <button class="form-button" type="submit" >Send Message</button>
+        <textarea class="form-field" name="message" id="message" v-model= "message"></textarea>
+        <button class="form-button" type="submit" value="send" >Send Message</button>
       </form>
     </div>
   </div>
-  <div v-else>Thank you for submitting</div>
+  <div v-else id="submitted">
+    <h1>Thank you for filling out that form. We look forward to chatting with you further.</h1>
+    <h2>Before you go... why not subscribe to the monthly newsletter or meet us on social media?</h2>
+
+    <MailChimpSignUp />
+    <SocialMediaLogos /></div>
   </div>
 </template>
 
@@ -31,7 +36,24 @@
 export default {
   data() {
     return {
+      name: '',
+      email: '',
+      message: '',
       submitted: false
+    }
+  },
+  methods: {
+    async submit() {
+      try {
+        const res = await this.$axios.request({
+          url: "https://formspree.io/f/mdopzqpo",
+          method: 'post',
+          data: this.$data
+        })
+        this.submitted = true
+      } catch (err) {
+        console.log(err)
+      }
     }
   }
 }
@@ -96,6 +118,10 @@ export default {
 
     .hpot {
       display: none;
+    }
+
+    #submitted {
+      text-align: center;
     }
 </style>
 
