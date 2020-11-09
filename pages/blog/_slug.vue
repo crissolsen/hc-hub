@@ -2,7 +2,6 @@
     <div>
     <TheNavBar />
     <main>
-      <h1> {{ post.path }} </h1>
       <div id="blog-title">
         <h1>{{ post.title }}</h1>
         
@@ -12,9 +11,9 @@
        <p> Post created on {{ formatDate(post.createdAt) }} by {{ post.author.name }}</p>
     </main>
     <!-- Come back to the facebook sharing -->
-    <!-- <a :href= "`https://www.facebook.com/sharer/sharer.php?u=practical-bhabha-ba25eb.netlify.app/blog/`" target="_blank">
+    <a :href= "`https://www.facebook.com/sharer/sharer.php?u=practical-bhabha-ba25eb.netlify.app/blog/${post.slug}`" target="_blank">
   Share to Facebook
-</a> -->
+</a>
     <div>
       <h2 id="more-posts">More posts you'll love</h2>
       <footer>
