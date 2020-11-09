@@ -56,10 +56,10 @@ export default {
     async routes() {
       const { $content } = require("@nuxt/content");
       const files = await $content({ deep: true })
-        .only(["path"])
+        .only(["slug"])
         .fetch();
 
-      return files.map(file => (file.path === "/blog/index" ? "/" : file.path));
+      return files.map(file => (file.path === "/blog/index" ? "/" : "/blog/"+ file.slug));
     }
   }
 };
