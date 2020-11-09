@@ -6,7 +6,7 @@
       Enquiry Form
     </h1>
     <div class="content">
-      <form name="contact" action="/thanks" method="POST" netlify>     
+      <form name="contact" action="/" method="POST" netlify>     
         <label class="form-label" for="name">
           Name:
         </label>
@@ -16,7 +16,7 @@
         </label>
         <input class="form-field" name="_replyto" id="email" />
         <label class="form-label" for="message">
-          How can we help?:
+          How can we help?
         </label>
         <textarea class="form-field" name="message" id="message"></textarea>
         <button class="form-button" type="submit" >Send Message</button>
