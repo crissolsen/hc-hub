@@ -59,7 +59,7 @@ export default {
         .only(["path"])
         .fetch();
 
-      return files.map(file => (file.path === "/index" ? "/" : file.path));
+      return files.map(file => (file.path === "/blog" ? "/" : file.path));
     }
   }
 };
