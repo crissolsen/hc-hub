@@ -2,6 +2,7 @@
     <div>
     <TheNavBar />
     <main>
+      <h1> {{ post.path }} </h1>
       <div id="blog-title">
         <h1>{{ post.title }}</h1>
         
