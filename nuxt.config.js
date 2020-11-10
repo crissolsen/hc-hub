@@ -8,6 +8,10 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: "Homecode | Serving you in tech",
+    htmlAttrs: {
+        lang: 'en',
+        amp: true
+      },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -54,7 +58,7 @@ export default {
   build: {},
 
   generate: {
-    async routes() {
+   async routes() {
       const { $content } = require("@nuxt/content");
       const files = await $content({ deep: true })
         .only(["slug"])
