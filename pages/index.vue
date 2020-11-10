@@ -2,6 +2,7 @@
   <div id="page-wrapper">
     <TheNavBar />
     <AnotherHero />
+    <AboutUs />
     <MailChimpSignUp />
     <SocialMediaLogos />
 
