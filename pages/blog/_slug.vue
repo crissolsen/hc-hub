@@ -57,9 +57,12 @@ export default {
     },
     head() {
       return {
-        title: "Title",
         meta: [
-          { property: "og.url", content:`https://homecode.co.za/blog/${post.slug}`}
+          { property: "og:url", content:`https://homecode.co.za/blog/${post.slug}`},
+          { property: "og:type",content: "article" },
+          { property: "og:title",content: this.post.title },
+          { property: "og:description",content: this.post.description },
+          { property: "og:image",content: this.post.img },
         ]
     };
   }
