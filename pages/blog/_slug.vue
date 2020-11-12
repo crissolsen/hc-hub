@@ -9,12 +9,10 @@
 
        <nuxt-content :document= "post" />
        <p> Post created on {{ formatDate(post.createdAt) }} by {{ post.author.name }}</p>
+       <div class="sharethis-inline-share-buttons"></div>
     </main>
-    <!-- Come back to the facebook sharing -->
-    <a :href= "`https://www.facebook.com/sharer/sharer.php?u=homecode.co.za/blog/${post.slug}`" target="_blank">
-  Share to Facebook
-</a>
     <div>
+      
       <h2 id="more-posts">More posts you'll love</h2>
       <footer>
         <NuxtLink v-for= "i in filteredPosts" :key= "i.slug" :to= "`/blog/${i.slug}`">
@@ -25,13 +23,16 @@
           </NuxtLink>
         
       </footer>
+      
       <NuxtLink :to= "`/blog`" id="back-block-text">
         <div id="back-block">
          Back to all posts
          </div>
       </NuxtLink>
     </div>
+    
     </div>
+    
 </template>
 
 <script>
@@ -107,6 +108,13 @@ export default {
     display: flex;
     justify-content: center;
 
+  }
+
+  #fb-share {
+    text-decoration: none;
+    background: green;
+    padding: 0.5em;
+    font-size: 0.8em;
   }
 
    #more-posts {
