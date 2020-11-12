@@ -9,8 +9,8 @@ export default {
   head: {
     title: "Homecode | Serving you in tech",
     htmlAttrs: {
-        lang: 'en'
-      },
+      lang: "en"
+    },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -27,9 +27,10 @@ export default {
         type: "image/ico",
         href:
           "https://res.cloudinary.com/dvwsiufhl/image/upload/f_ico,w_10/v1604046275/homeCode/HOMECODE_logo-03_qttemw.png"
-      }, 
+      },
       {
-        rel: "canonical", href:"https://homecode.co.za"
+        rel: "canonical",
+        href: "https://homecode.co.za"
       }
     ]
   },
@@ -48,19 +49,29 @@ export default {
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
+  content: {
+    markdown: {
+      // https://github.com/remarkjs/remark-external-links#options
+      remarkExternalLinks: {
+        target: "_self",
+        rel: "nofollow"
+      }
+    }
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 
   generate: {
-   async routes() {
+    async routes() {
       const { $content } = require("@nuxt/content");
       const files = await $content({ deep: true })
         .only(["slug"])
         .fetch();
 
-      return files.map(file => (file.path === "/blog/index" ? "/" : "/blog/"+ file.slug));
+      return files.map(file =>
+        file.path === "/blog/index" ? "/" : "/blog/" + file.slug
+      );
     }
   }
 };
