@@ -9,8 +9,7 @@ export default {
   head: {
     title: "Homecode | Serving you in tech",
     htmlAttrs: {
-        lang: 'en',
-        amp: true
+        lang: 'en'
       },
     meta: [
       { charset: "utf-8" },
@@ -28,15 +27,12 @@ export default {
         type: "image/ico",
         href:
           "https://res.cloudinary.com/dvwsiufhl/image/upload/f_ico,w_10/v1604046275/homeCode/HOMECODE_logo-03_qttemw.png"
+      }, 
+      {
+        rel: "canonical", href:"https://homecode.co.za"
       }
     ]
   },
-
-  // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
-
-  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
