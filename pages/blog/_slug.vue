@@ -9,7 +9,7 @@
 
        <nuxt-content :document= "post" />
        <p> Post created on {{ formatDate(post.createdAt) }} by {{ post.author.name }}</p>
-       <div class="sharethis-inline-share-buttons"></div>
+       <ShareThis />
     </main>
     <div>
       
@@ -65,7 +65,7 @@ export default {
           { property: "og:description",content: this.post.description },
           { property: "og:image",content: this.post.img },
         ]
-    };
+    }
   }
 
   }
