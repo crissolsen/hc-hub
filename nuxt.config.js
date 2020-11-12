@@ -19,14 +19,6 @@ export default {
         name: "description",
         content:
           "HomeCode is a web development and coding and robotics organisation based in Sedgefield, Western Cape. The Garden Route is where most of our business and homeschool clients reside."
-      },
-      {
-        hid: `og:description`,
-        name: "og:description"
-      },
-      {
-        hid: `og:title`,
-        name: "og:title"
       }
     ],
     link: [
@@ -40,14 +32,6 @@ export default {
         rel: "canonical",
         href: "https://homecode.co.za"
       }
-    ],
-    script: [
-      {
-        type: "text/javascript",
-        src:
-          "https://platform-api.sharethis.com/js/sharethis.js#property=5fad017d63b0cd00123cbb45&product=inline-share-buttons",
-        async: "async"
-      }
     ]
   },
 
@@ -57,6 +41,9 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [],
 
+  plugins: [ 
+    { src: "~plugins/ga.js", mode: "client" }
+  ],
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/content
@@ -69,8 +56,8 @@ export default {
     markdown: {
       // https://github.com/remarkjs/remark-external-links#options
       remarkExternalLinks: {
-        target: "_self",
-        rel: "nofollow"
+        target: "_blank",
+        rel: "nofollow", 
       }
     }
   },
