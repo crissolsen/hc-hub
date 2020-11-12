@@ -80,6 +80,9 @@ export default {
       return new Date(date).toLocaleDateString('en', options)
     }
   },
+  head() {
+    title: "Education Blog"
+  }
 };
 </script>
 
