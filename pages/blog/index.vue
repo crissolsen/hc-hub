@@ -82,7 +82,9 @@ export default {
     }
   },
   head() {
-    title: "Education Blog"
+    return {
+     titleTemplate: this.post.title || "Coding, Robotics and Thinking Skills Education Blog" 
+      }
   }
 };
 </script>
