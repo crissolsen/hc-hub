@@ -1,13 +1,9 @@
 <template>
   <div id="hero-container">
     <svg
-      xmlns:dc="http://purl.org/dc/elements/1.1/"
-      xmlns:cc="http://creativecommons.org/ns#"
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
       xmlns:svg="http://www.w3.org/2000/svg"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+
       width="100%"
       
       viewBox="0 0 297 120"
@@ -381,7 +377,7 @@ export default {
   width: 100%;
 }
 
-.st0 {
+/* .st0 {
   fill-rule: evenodd;
   clip-rule: evenodd;
 }
@@ -456,5 +452,5 @@ export default {
   100% {
     stroke-opacity: 0;
   }
-}
+} */
 </style>
