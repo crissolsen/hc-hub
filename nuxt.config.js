@@ -41,23 +41,26 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [],
 
-  plugins: [ 
-    { src: "~plugins/ga.js", mode: "client" }
-  ],
+  plugins: [{ src: "~plugins/ga.js", mode: "client" }],
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/content
     "@nuxt/content",
-    "@nuxtjs/axios"
+    "@nuxtjs/axios",
+    "@nuxtjs/sitemap"
   ],
 
+  sitemap : {
+    hostname: "https://homecode.co.za",
+    gzip: true
+  },
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {
     markdown: {
       // https://github.com/remarkjs/remark-external-links#options
       remarkExternalLinks: {
         target: "_blank",
-        rel: "nofollow", 
+        rel: "nofollow"
       }
     }
   },
