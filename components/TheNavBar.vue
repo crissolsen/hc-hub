@@ -8,7 +8,7 @@
      </NuxtLink>
       <div v-show="!mobile" id="link-wrapper">
         <NuxtLink to="/education">Education</NuxtLink>
-        <NuxtLink to="/webdev" prefetch>Web Development</NuxtLink>
+        <NuxtLink to="/webdev" >Web Development</NuxtLink>
         <NuxtLink id="contact-button" :to= "`/contact-form`">We can help!</NuxtLink>
       </div>
       
