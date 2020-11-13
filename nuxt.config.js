@@ -41,7 +41,8 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [],
 
-  plugins: [{ src: "~plugins/ga.js", mode: "client" }],
+  //Re enable for google analytics
+  // plugins: [{ src: "~plugins/ga.js", mode: "client" }],
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/content
