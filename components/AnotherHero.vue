@@ -377,7 +377,7 @@ export default {
   width: 100%;
 }
 
-/* .st0 {
+.st0 {
   fill-rule: evenodd;
   clip-rule: evenodd;
 }
@@ -385,57 +385,57 @@ export default {
 .KxTuFKol_0 {
   stroke-dasharray: 291 293;
   stroke-dashoffset: 292;
-  animation: KxTuFKol_draw 1500ms ease 0ms forwards;
+  animation: KxTuFKol_draw 150ms ease 0ms forwards;
 }
 .KxTuFKol_1 {
   stroke-dasharray: 754 756;
   stroke-dashoffset: 755;
-  animation: KxTuFKol_draw 1500ms ease 0ms forwards;
+  animation: KxTuFKol_draw 1150ms ease 0ms forwards;
 }
 .KxTuFKol_2 {
   stroke-dasharray: 2396 2398;
   stroke-dashoffset: 2397;
-  animation: KxTuFKol_draw 1500ms ease 0ms forwards;
+  animation: KxTuFKol_draw 1150ms ease 0ms forwards;
 }
 .KxTuFKol_3 {
   stroke-dasharray: 760 762;
   stroke-dashoffset: 761;
-  animation: KxTuFKol_draw 1500ms ease 0ms forwards;
+  animation: KxTuFKol_draw 1150ms ease 0ms forwards;
 }
 .KxTuFKol_4 {
   stroke-dasharray: 269 271;
   stroke-dashoffset: 270;
-  animation: KxTuFKol_draw 1500ms ease 0ms forwards;
+  animation: KxTuFKol_draw 1150ms ease 0ms forwards;
 }
 .KxTuFKol_5 {
   stroke-dasharray: 51 53;
   stroke-dashoffset: 52;
-  animation: KxTuFKol_draw 1500ms ease 0ms forwards;
+  animation: KxTuFKol_draw 1150ms ease 0ms forwards;
 }
 .KxTuFKol_6 {
   stroke-dasharray: 335 337;
   stroke-dashoffset: 336;
-  animation: KxTuFKol_draw 1500ms ease 0ms forwards;
+  animation: KxTuFKol_draw 1150ms ease 0ms forwards;
 }
 .KxTuFKol_7 {
   stroke-dasharray: 777 779;
   stroke-dashoffset: 778;
-  animation: KxTuFKol_draw 1500ms ease 0ms forwards;
+  animation: KxTuFKol_draw 1150ms ease 0ms forwards;
 }
 .KxTuFKol_8 {
   stroke-dasharray: 1470 1472;
   stroke-dashoffset: 1471;
-  animation: KxTuFKol_draw 1500ms ease 0ms forwards;
+  animation: KxTuFKol_draw 1150ms ease 0ms forwards;
 }
 .KxTuFKol_9 {
   stroke-dasharray: 1629 1631;
   stroke-dashoffset: 1630;
-  animation: KxTuFKol_draw 1500ms ease 0ms forwards;
+  animation: KxTuFKol_draw 1150ms ease 0ms forwards;
 }
 .KxTuFKol_10 {
   stroke-dasharray: 895 897;
   stroke-dashoffset: 896;
-  animation: KxTuFKol_draw 1500ms ease 0ms forwards;
+  animation: KxTuFKol_draw 1150ms ease 0ms forwards;
 }
 @keyframes KxTuFKol_draw {
   100% {
@@ -452,5 +452,5 @@ export default {
   100% {
     stroke-opacity: 0;
   }
-} */
+}
 </style>
