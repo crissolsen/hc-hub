@@ -25,7 +25,7 @@
         justify-content: center;
         text-align: center;
         box-shadow: 0 0.2em 1em rgba(0,115,92,1);
-        width: 80%;
+        width: 60%;
         margin: 1em auto;
         border-radius: 1em;
         }
@@ -37,21 +37,22 @@
 
     #mc_embed_signup .button {
         background: #f7872c ;
-        padding: 0.5em;
+        padding: 0.7em;
         margin: 0.3em;
         color: black;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         font-family: 'Comfortaa', sans-serif;
         border-radius: 0.4em;
-        width: 40%;
+
     }
     #mc_embed_signup .email {
-        width: 100%;
+        width: 80%;
         height: 1.5em;
         border-radius: 0.4em;
         text-align: center;
         font-family: 'Comfortaa', sans-serif;
         font-size: 1em;
+        margin: 1em auto;
     }
 
     #mc_embed_signup .clear {

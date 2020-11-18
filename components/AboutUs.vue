@@ -1,6 +1,8 @@
 <template>
     <div id="about-wrapper">
         <h1>Welcome to HomeCode</h1>
+        <div id="show-more-button" @click= "showAboutUs=!showAboutUs">About Us</div>
+        <div id="about-us-show" v-if= "showAboutUs">
         <h2>What is HomeCode?</h2>
         <p>
             HomeCode is a tech company that focuses on making lives better, in business and education. We develop websites and web apps that are fast, particular to your needs and really great looking.
@@ -26,22 +28,45 @@
             Christopher Olsen
             <br>
             (HomeCode director)
-        </p>
-
+        
+        </div>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            showAboutUs: false
+        }
+    }
+}
+</script>
 
 <style scoped>
     #about-wrapper {
         width: 90%;
-        margin: 1em auto;
-        box-shadow: 0.2em 0.4em 1em gray;
+        margin: 0 auto;
+        /* box-shadow: 0.2em 0.4em 1em gray; */
         padding: 1em;
     }
-
+    #show-more-button {
+        background: #00735cff;
+        padding: 1em;
+        border-radius: 10px;
+        color: white;
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        cursor: pointer;
+    }
     #about-wrapper h1 {
         text-align: center;
         color: rgba(0,115,92,1);
+        /* border-top: 0.2em solid rgba(0,115,92,1);
+        border-bottom: 0.2em solid rgba(0,115,92,1); */
+        padding-top: 0.5em;
+        margin-bottom: 0.2em;
     }
 
     #about-wrapper h2 {

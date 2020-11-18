@@ -113,7 +113,7 @@ export default {
         padding: 1em;
         margin: 0.5em;
         width: 33%;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         color: white;
         box-shadow: 1px 3px 5px gray;
         display: flex;

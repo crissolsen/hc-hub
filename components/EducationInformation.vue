@@ -105,7 +105,7 @@ export default {
     text-align: center;
     padding: 1em;
     margin: 0.5em;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     color: black;
     box-shadow: 1px 3px 5px gray;
   }

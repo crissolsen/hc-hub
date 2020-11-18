@@ -74,8 +74,8 @@
         width: 50%;
         margin: 0 auto;
         padding: 1em;
-        border: 2px solid black;
-        box-shadow: 5px 5px 2px 2px #606462ff;
+        /* border: 2px solid black; */
+        box-shadow: 0.3em 0.3em 0.3em #606462ff;
         border-radius: 1em;
         font-weight: 800;
         font-size: 1em;

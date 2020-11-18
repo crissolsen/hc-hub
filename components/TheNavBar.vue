@@ -93,14 +93,14 @@ nav {
   color: white;
   text-decoration: none;
   margin-left: 1em;
-  box-shadow: 5px 5px 2px 2px #606462ff;
+  /* box-shadow: 5px 5px 2px 2px #606462ff; */
   font-weight: 800;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 #contact-button {
   background: #f7872c !important;
   color: black !important;
-  border: 2px solid black !important;
+  /* border: 2px solid black !important; */
 }
 #mobile-link-wrapper {
     align-self: center;
@@ -117,8 +117,9 @@ nav {
   border-radius: 10px;
   color: white;
   text-decoration: none;
-  box-shadow: 5px 5px 2px 2px #606462ff;
-  border: 1px solid black;
+  margin: 0.3em;
+  /* box-shadow: 5px 5px 2px 2px #606462ff; */
+  /* border: 1px solid black; */
 }
 
 .fade-enter-active, .fade-leave-active {
