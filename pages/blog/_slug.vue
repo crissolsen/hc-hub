@@ -72,12 +72,12 @@ export default {
         property: "description",
         content: `${this.post.description}`
         },
-          { property: "og:url", content:`https://homecode.co.za/blog/${this.post.slug}` },
-          { property: "og:type",content: "article" },
-          { property: "og:title",content:` ${this.post.title}` },
-          { property: "description", content: `${this.post.description}`, hid:"description"},
-          { property: "og:description",content: `${this.post.description}`, hid: "og:description"},
-          { property: "og:image",content: `${this.post.img}`, hid: "og:image" },
+          { name:"og:url", property: "og:url", content:`https://homecode.co.za/blog/${this.post.slug}` },
+          { name:"og:type", property: "og:type",content: "article" },
+          { name:"og:title", property: "og:title",content:` ${this.post.title}` },
+          { name: "description", property: "description", content: `${this.post.description}`, hid:"description"},
+          { name:"og:description", property: "og:description", content: `${this.post.description}`, hid: "og:description"},
+          { name: "og:image", property: "og:image",content: `${this.post.img}`, hid: "og:image" },
         ]
       }
     }
