@@ -7,7 +7,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: "HomeCode | Serving you in tech %s",
+    titleTemplate: "HomeCode | %s",
     htmlAttrs: {
       lang: "en"
     },
@@ -19,6 +19,29 @@ export default {
         name: "description",
         content:
           "HomeCode is a web development and coding and robotics organisation based in Sedgefield, Western Cape. The Garden Route is where most of our business and homeschool clients reside."
+      },
+      {
+        hid: "og:title",
+        name: "og:title",
+        content: "HomeCode | Make life better with tech"
+      },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content:
+          "HomeCode is a web development and coding and robotics organisation based in Sedgefield, Western Cape. The Garden Route is where most of our business and homeschool clients reside."
+      },
+      {
+        hid: "og:image",
+        name: "og:image",
+        content:
+          "https://res.cloudinary.com/dvwsiufhl/image/upload/v1604046275/homeCode/HOMECODE_logo-03_qttemw.png"
+      },
+      {
+        hid: "og:url",
+        name: "og:url",
+        content:
+          "https:homecode.co.za"
       }
     ],
     link: [
@@ -51,7 +74,7 @@ export default {
     "@nuxtjs/sitemap"
   ],
 
-  sitemap : {
+  sitemap: {
     hostname: "https://homecode.co.za",
     gzip: true
   },

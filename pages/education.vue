@@ -9,10 +9,8 @@
 
 <script>
 export default {
-    head() {
-        return {
-            titleTemplate: "HomeCode | Coding and Robotics Education"
-        }
+    head: {
+            title: "Coding and Robotics Education"
     }
 }
 </script>

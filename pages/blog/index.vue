@@ -81,10 +81,8 @@ export default {
       return new Date(date).toLocaleDateString('en', options)
     }
   },
-  head() {
-    return {
-     titleTemplate: this.post.title || "Coding, Robotics and Thinking Skills Education Blog" 
-      }
+  head: {
+    title: "Educational Blog"
   }
 };
 </script>

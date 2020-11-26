@@ -12,7 +12,9 @@
 
 <script>
 export default {
- 
+  head: {
+    title: "Serving you in tech"
+  }
 }
 </script>
 

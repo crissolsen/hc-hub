@@ -37,13 +37,17 @@
 
 <script>
 export default {
+  data() {
+      return {
+        postTitle: "title"
+      }
+    },
     async asyncData({ $content, params }) {
       const post = await $content('posts', params.slug).fetch()
       const allPosts = await $content('posts').fetch()
-
       return { post, allPosts }
     },
-
+    
     methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
@@ -56,19 +60,27 @@ export default {
     let tempNumberForChoosingRandomPosts = Math.floor(Math.random() * (this.allPosts.length))
     return this.allPosts.slice(tempNumberForChoosingRandomPosts,(tempNumberForChoosingRandomPosts+2))
     },
-    head: {
-        title: "This is the title"
-        // meta: [
-        //   { property: "og:url", content:`https://homecode.co.za/blog/${post.slug}` },
-        //   { property: "og:type",content: "article" },
-        //   { property: "og:title",content: this.post.title },
-        //   { property: "description", content: "Blog post", hid:"description"},
-        //   { property: "og:description",content: this.post.description, hid: "og:description"},
-        //   { property: "og:image",content: this.post.img, hid: "og:image" },
-        // ]
-  }
-
-  }
+    
+        
+  },
+  head(context) {
+     return { 
+      title: `${this.post.title}`, 
+      meta: [
+        {
+        hid: "description",
+        property: "description",
+        content: `${this.post.description}`
+        },
+          { property: "og:url", content:`https://homecode.co.za/blog/${this.post.slug}` },
+          { property: "og:type",content: "article" },
+          { property: "og:title",content:` ${this.post.title}` },
+          { property: "description", content: `${this.post.description}`, hid:"description"},
+          { property: "og:description",content: `${this.post.description}`, hid: "og:description"},
+          { property: "og:image",content: `${this.post.img}`, hid: "og:image" },
+        ]
+      }
+    }
 }
 </script>
 

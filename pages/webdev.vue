@@ -6,3 +6,11 @@
         <SocialMediaLogos />
     </div>
 </template>
+
+<script>
+export default {
+    head: {
+        title: "Web Development"
+    }
+}
+</script>

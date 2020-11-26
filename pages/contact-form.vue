@@ -55,6 +55,9 @@ export default {
         console.log(err)
       }
     }
+  },
+  head: {
+    title: "Contact Us"
   }
 }
 </script>
