@@ -50,10 +50,10 @@ export default {
         href:
           "https://res.cloudinary.com/dvwsiufhl/image/upload/f_ico,w_10/v1604046275/homeCode/HOMECODE_logo-03_qttemw.png"
       },
-      {
-        rel: "canonical",
-        href: "https://homecode.co.za"
-      }
+      // {
+      //   rel: "canonical",
+      //   href: "https://homecode.co.za"
+      // }
     ]
   },
 
