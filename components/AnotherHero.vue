@@ -13,7 +13,7 @@
       sodipodi:docname="MainTreeback.svg"
       style=""
     >
-     <NuxtLink id="get-help-button" :to= "`/contact-form`"><text x="172" y="32" fill="#f7872c" font-size="10">Get help</text></NuxtLink>
+     <NuxtLink id="get-help-button" :to= "`/contact-form`"><text x="170" y="32" fill="#f7872c" font-size="12">Get help</text></NuxtLink>
      <text x="105" y="100" fill="rgba(0,115,92,1)" font-size="12">Life's better with {{ serveText }}</text>
       <defs id="defs2">
         <linearGradient id="linearGradient4194">
