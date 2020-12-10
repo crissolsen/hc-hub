@@ -25,7 +25,7 @@
             </NuxtLink>
             <p>{{ i.description }}</p>
             <p class="extra-info">Written by {{ i.author.name }}</p>
-            <p class="extra-info"> {{ formatDate(Date(i.createdAt)) }}</p>
+            <!-- <p class="extra-info"> {{ formatDate(Date(i.createdAt)) }}</p> -->
             
           </div>
       </div>
