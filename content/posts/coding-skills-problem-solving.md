@@ -33,7 +33,7 @@ Does that mean that all schooling that doesn't teach this is useless? Well, that
 BUT...
 
 ## Coding as a Tool
-Only when coding is used as a tool in all subjects to solve problems does it really blossom like the beautiful tech-flower that it is. It was when I used coding to teach multiplication (like in this video) that it was crazy effective.
+Only when coding is used as a tool in all subjects to solve problems does it really blossom like the beautiful tech-flower that it is. It was when I used coding to teach multiplication ([like in this video](https://www.youtube.com/watch?v=8mgisdN-zgo&t=11s)) that it was crazy effective.
 
 When one of my students (who was in bridging classes) coded an entire demonstration on the importance of recycling and environmental care I knew that coding is gold. 
 
