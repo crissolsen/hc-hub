@@ -2,7 +2,7 @@
 title: 3 Ways to See Your Children's Understanding
 author:
     name: Christopher Olsen
-    bio: Love Jesus, Love tech, serve the next generation
+    bio: Love Jesus, love tech, serve the next generation
 img: https://images.unsplash.com/photo-1575914802699-2f46321fac4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1321&q=80
 alt: screaming with frustration
 description: A parrot can memorise and recite. How can we know if our children are truly learning? Is it possible to know if they truly understand?

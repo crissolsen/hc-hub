@@ -2,7 +2,7 @@
 title: We Don't Need Coding in Education
 author:
     name: Christopher Olsen
-    bio: Love Jesus, Love tech, serve the next generation
+    bio: Love Jesus, love tech, serve the next generation
 img: https://res.cloudinary.com/dvwsiufhl/image/upload/h_500,q_auto,f_auto/v1604398185/blog/nesa-by-makers-IgUR1iX0mqM-unsplash_gc30h0.jpg
 alt: students coding in a library
 description: The trend of coding and robotics in education is inescapable... but do we really need it? No!? Really!? Why? Well, I'll tell you!

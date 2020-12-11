@@ -2,7 +2,7 @@
 title: 2 Ways Robots will Replace Our Kids's Jobs, and 1 Way They Won't
 author:
     name: Christopher Olsen
-    bio: Love Jesus, Love tech, serve the next generation
+    bio: Love Jesus, love tech, serve the next generation
 img: https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
 alt: girl holding hands with robot
 description: Are robots taking over? Will our children stand no chance of getting a job because AI can do it better? Yes and no. Mostly no.

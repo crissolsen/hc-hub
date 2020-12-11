@@ -2,7 +2,7 @@
 title: Be a Brave Parent, Digitally...
 author:
     name: Christopher Olsen
-    bio: Love Jesus, Love tech, serve the next generation
+    bio: Love Jesus, love tech, serve the next generation
 img: https://images.unsplash.com/photo-1583587067350-2c49115673c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
 alt: lion protecting cub
 description: How can we protect our children from adverts and trackers when they research? Be Brave, of course.

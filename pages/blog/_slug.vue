@@ -8,7 +8,8 @@
       </div>
 
        <nuxt-content :document= "post" />
-       <p> Post created on {{ formatDate(post.createdAt) }} by {{ post.author.name }}</p>
+       <div id='author-card'><p> By {{ post.author.name }}</p>
+       <p> {{ post.author.bio }}</p></div>
        <ShareThis />
     </main>
     <div>
@@ -125,7 +126,14 @@ export default {
   .nuxt-content .image-container {
     display: flex;
     justify-content: center;
+  }
 
+  #author-card {
+    padding: 0.5em;
+    margin: 0.3em;
+    font-size: 1em;
+    text-align: right;
+    color: gray;
   }
 
   #fb-share {

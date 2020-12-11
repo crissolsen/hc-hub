@@ -2,7 +2,7 @@
 title: Coding Teaches - Decomposition
 author:
     name: Christopher Olsen
-    bio: Love Jesus, Love tech, serve the next generation
+    bio: Love Jesus, love tech, serve the next generation
 img: https://res.cloudinary.com/dvwsiufhl/image/upload/h_500,q_auto,f_auto/v1607587504/blog/photo-1494059980473-813e73ee784b_avupxc.jpg
 alt: pile of puzzle pieces
 description: Coding is being introduced as a compulsory subject in many schools. In this series we look at why that is great news. To start off, let's look at the skill of decomposition.

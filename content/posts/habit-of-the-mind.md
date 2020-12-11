@@ -2,7 +2,7 @@
 title: Teaching Success - Habits of the Mind Series Introduction
 author:
      name: Christopher Olsen
-     bio: Love Jesus, Love tech, serve the next generation
+     bio: Love Jesus, love tech, serve the next generation
 img: https://res.cloudinary.com/dvwsiufhl/image/upload/h_500,q_auto,f_auto/v1604921725/homeCode/ian-stauffer-bH7kZ0yazB0-unsplash_mgqoqm.jpg
 alt: climbing a mountain
 description: How do you define success? Lots of money? Security? Being the best at marbles? How can we teach our children to be successful?
