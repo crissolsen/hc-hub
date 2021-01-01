@@ -189,4 +189,9 @@ export default {
     font-size: 1.3em;
   }
 
+  iframe {
+    display: block;
+    margin: 0 auto;
+  }
+
 </style>
