@@ -191,6 +191,9 @@ export default {
 
   iframe {
     display: block;
+    min-width: 10%;
+    max-width: 80%;
+    max-height: 800px;
     margin: 0 auto;
   }
 

@@ -9,7 +9,7 @@ description: We want to prepare our children for their uncertain future. In this
 category: thinkingSkills
 tags: thinking skills, thinking routines, free activity
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/grx14DsVr3Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-player"></iframe>
+<iframe src="https://www.youtube.com/embed/grx14DsVr3Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-player"></iframe>
 
 ## I Think We Should Think
 I remember teaching grade 5 learners about photosynthesis and having one of the children (who would generally be considered somewhat disruptive) ask, "Why do we need to know this!?"
