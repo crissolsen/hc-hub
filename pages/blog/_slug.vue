@@ -130,7 +130,7 @@ export default {
             {
               hid: 'og:image:alt',
               property: 'og:image:alt',
-              content: this.title
+              content: `${this.post.title}`
             }
           ]
 
