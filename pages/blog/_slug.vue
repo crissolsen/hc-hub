@@ -67,25 +67,73 @@ export default {
   head(context) {
      return { 
       title: `${this.post.title}`, 
-      meta: [
-        {
-        hid: "description",
-        property: "description",
-        content: `${this.post.description}`
-        },
-          { property: "og:url", content:`https://homecode.co.za/blog/${this.post.slug}` },
-          {  property: "og:type",content: "article" },
-          {  property: "og:title",content:` ${this.post.title}` },
-          { name: "description", property: "description", content: `${this.post.description}`, hid:"description"},
-          {  property: "og:description", content: `${this.post.description}`, hid: "og:description"},
-          { property: "og:image",content: `${this.post.img}`, hid: "og:image" },
-        ],
+    //   meta: [
+    //     {
+    //     hid: "description",
+    //     property: "description",
+    //     content: `${this.post.description}`
+    //     },
+    //       { property: "og:url", content:`https://homecode.co.za/blog/${this.post.slug}` },
+    //       {  property: "og:type",content: "article" },
+    //       {  property: "og:title",content:` ${this.post.title}` },
+    //       { name: "description", property: "description", content: `${this.post.description}`, hid:"description"},
+    //       {  property: "og:description", content: `${this.post.description}`, hid: "og:description"},
+    //       { property: "og:image",content: `${this.post.img}`, hid: "og:image" },
+    //     ],
         link: [
           {
         rel: "canonical",
         href: `https://homecode.co.za/blog/${this.post.slug}`
-      }
-        ]
+          }
+        ],
+        meta: [
+            {
+              hid: 'twitter:title',
+              name: 'twitter:title',
+              content: `${this.post.title}`
+            },
+            {
+              hid: 'twitter:description',
+              name: 'twitter:description',
+              content: `${this.post.description}`
+            },
+            {
+              hid: 'twitter:image',
+              name: 'twitter:image',
+              content: `${this.post.img}`
+            },
+            {
+              hid: 'twitter:image:alt',
+              name: 'twitter:image:alt',
+              content: `${this.post.alt}`
+            },
+            {
+              hid: 'og:title',
+              property: 'og:title',
+              content: `${this.post.title}`
+            },
+            {
+              hid: 'og:description',
+              property: 'og:description',
+              content: `${this.post.description}`
+            },
+            {
+              hid: 'og:image',
+              property: 'og:image',
+              content: `${this.post.img}`
+            },
+            {
+              hid: 'og:image:secure_url',
+              property: 'og:image:secure_url',
+              content: `${this.post.alt}`
+            },
+            {
+              hid: 'og:image:alt',
+              property: 'og:image:alt',
+              content: this.title
+            }
+          ]
+
       }
     }
 }
