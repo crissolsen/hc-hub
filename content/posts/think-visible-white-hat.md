@@ -16,7 +16,7 @@ Doesn't that just sound lovely? We can each have our truth and go on our way, bl
 
 > Saying that we can all have our own truth is a statement of truth and consequently self-defeating.
 
-## Who builtdeno the fact factory?
+## Who built the fact factory?
 What we do know is that there is something external to us that holds and keeps the universe running. Laws aren't written by nothing.
 
 > We don't need students who are alright with not knowing. 
