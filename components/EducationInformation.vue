@@ -4,7 +4,7 @@
         <h1>Education</h1>
         <div id="edu-nav-wrapper">
           <NuxtLink :to="`/blog`"><div class="nav-button">Education Blog</div></NuxtLink>
-          <a href="https://homecode.shop" target="_blank"><div class="nav-button">Coding and Robotics Store</div></a>
+          <a href="#robot-store"><div class="nav-button">Coding and Robotics Store</div></a>
           <a href="#online-courses"><div class="nav-button">Online Coding Courses</div></a>
           <a href="#lesson-plans"><div class="nav-button">Lesson Plans</div></a>
         </div>
@@ -43,11 +43,11 @@
       </article>
       <article>
           <div class="education-content">
-              <h2><a :href= "hcShopURI" rel="noreferrer" target="_blank">Coding and Robotics Kits and Free Lessons</a></h2>
+              <h2><a :href= "hcShopURI" rel="noreferrer" target="_blank" id="robot-store">Coding and Robotics Kits and Free Lessons</a></h2>
               <p>The importance of movement and tinkering in education cannot be overstated. With the HomeCode coding and robotics starter kits, your children are able to make amazing things with tech (like a fruit keyboard)
-                  and see how excellent it can be for problem solving. Each kit comes with a full online course for free.
+                  and see how excellent it can be for problem solving. Each kit comes with a full online course for free. The robotics store is currently undergoing an upgrade. Please click below to contact me about our kits.
               </p>
-              <a :href="hcShopURI"><div class="edu-button">Browse the Store</div></a>
+              <a :href="hcShopURI"><div class="edu-button">Find Out More</div></a>
          </div>
       </article>
       <article>
@@ -78,7 +78,7 @@ export default {
         return {
             spaceURI: "https://www.udemy.com/course/space-explorers-coding-course-for-kids/?referralCode=DE8D3C487174A5BF372D",
             parentURI: "https://www.udemy.com/course/homecodeparents/?referralCode=9CF8785ED8A56A6FED8F",
-            hcShopURI: "https://homecode.shop",
+            hcShopURI: "mailto:shop@homecode.co.za",
         }
     }
      
