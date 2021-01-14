@@ -51,6 +51,22 @@
         border-radius: 0.5em;
         font-family: 'Comfortaa', sans-serif;
         padding: 0.3em;
+    }
 
+    ul {
+      background: rgba(0,115,92,1);
+      padding: 0.3em;
+      border-radius: 5%;
+    }
+
+    li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    li {
+      list-style-position: inside;
+      color: white;
+      padding: 1em;
     }
 </style>
