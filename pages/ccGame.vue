@@ -26,7 +26,7 @@ export default {
         return {
             divLength: 1,
             ready: false,
-            actions: ["jump", "hop right foot", "spin around", "sit down", "touch ears", "touch nose", "touch toes", "laugh", "blink 5 times", "tickle yourself", "hop left foot", "squeak like a mouse", "spin around", "touch chin", "touch shoulders", "touch shin", "touch knees", "scratch elbow", "pinch tummy"]
+            actions: ["jump", "hop right foot", "say something silly", "spin around", "sit down", "touch ears", "touch nose", "touch toes", "laugh", "blink 5 times", "tickle yourself", "hop left foot", "squeak like a mouse", "spin around", "touch chin", "touch shoulders", "touch shin", "touch knees", "scratch elbow", "pinch tummy"]
         }
     },
     methods: {
@@ -64,6 +64,13 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    #game-page input {
+        margin: 0 auto;
+        font-size: 1em;
+        text-align: center;
+        font-family: 'Comfortaa', sans-serif;
     }
 
     #game-page button {
