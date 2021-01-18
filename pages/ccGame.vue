@@ -2,10 +2,10 @@
   <div id="game-page">
       <TheNavBar />
       <p>How many steps in your robot's program?</p>
-      <input id="set-div-length" type="number" v-model.number= "divLength" />
+      <input id="set-div-length" type="number" v-model.number= "divLength" max="5" />
       <p>How long does each step take?</p>
       <input type="number" v-model.number= "timer" />
-      <button @click = "ready = !ready">Ready!</button>
+      <button @click = "lengthCheck">Ready!</button>
       <div id="game-wrapper" v-if= "ready">
         <div v-for= "index in divLength" :key= "index"  >
             <div class="colour-block" :id= "`block-${index}`" :style= "`background: ${initialRandomiser()}`" @click= "setRandomColour(index)"><h4>{{ actions[~~(Math.random()*actions.length)] }}</h4></div>
@@ -21,7 +21,7 @@
 export default {
     head() {
         return {
-            title: "Africa Teen Geeks Coding Club 2021"
+            title: "Robot Game 2021"
         }
       },
     data() {
@@ -30,7 +30,8 @@ export default {
             ready: false,
             actions: ["jump", "hop right foot", "say something silly", "stick out tongue", "spin around", "sit down", "touch ears", "touch nose", "touch toes", "laugh", "blink 5 times", "tickle yourself", "hop left foot", "squeak like a mouse", "spin around", "touch chin", "touch shoulders", "touch shin", "touch knees", "scratch elbow", "pinch tummy"],
             timer: 2,
-            timerRunning: false
+            timerRunning: false,
+            divLengthMax: 100
         }
     },
     methods: {
@@ -67,7 +68,14 @@ export default {
              }
 
             // location.reload()
-        }
+        },
+        lengthCheck() {
+            if (this.divLength < this.divLengthMax) {
+            this.ready = !this.ready
+            } else {
+                alert(`The maximum number of steps is ${this.divLengthMax}, please try again.`)
+            }
+        } 
     }
  }
 </script>
