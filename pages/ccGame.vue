@@ -3,6 +3,8 @@
       <TheNavBar />
       <p>How many steps in your robot's program?</p>
       <input id="set-div-length" type="number" v-model.number= "divLength" />
+      <p>How long does each step take?</p>
+      <input type="number" v-model.number= "timer" />
       <button @click = "ready = !ready">Ready!</button>
       <div id="game-wrapper" v-if= "ready">
         <div v-for= "index in divLength" :key= "index"  >
@@ -26,7 +28,9 @@ export default {
         return {
             divLength: 1,
             ready: false,
-            actions: ["jump", "hop right foot", "say something silly", "spin around", "sit down", "touch ears", "touch nose", "touch toes", "laugh", "blink 5 times", "tickle yourself", "hop left foot", "squeak like a mouse", "spin around", "touch chin", "touch shoulders", "touch shin", "touch knees", "scratch elbow", "pinch tummy"]
+            actions: ["jump", "hop right foot", "say something silly", "stick out tongue", "spin around", "sit down", "touch ears", "touch nose", "touch toes", "laugh", "blink 5 times", "tickle yourself", "hop left foot", "squeak like a mouse", "spin around", "touch chin", "touch shoulders", "touch shin", "touch knees", "scratch elbow", "pinch tummy"],
+            timer: 2,
+            timerRunning: false
         }
     },
     methods: {
@@ -40,18 +44,29 @@ export default {
         },
         go() {
             let initialClass = 1
-            setInterval(()=> {
-                let lengthOfDivs = document.querySelectorAll('.colour-block').length
-                if(initialClass > lengthOfDivs) { 
-                    return
-                }
-                let selected = document.getElementById(`block-${initialClass}`)
-                selected.classList.add('active-class')
-                initialClass += 1
-            }, 1800)
+            this.timerRunning = true
+            if (this.timerRunning) {
+                setInterval(()=> {
+                    let lengthOfDivs = document.querySelectorAll('.colour-block').length
+                    if(initialClass > lengthOfDivs || !this.timerRunning) {
+                        console.log("Cleared!")
+                        initialClass = 1
+                        return
+                    }
+                    let selected = document.getElementById(`block-${initialClass}`)
+                    selected.classList.add('active-class')
+                    initialClass += 1
+                }, this.timer*1000)
+          }
         },
         reset() {
-            location.reload()
+            this.timerRunning = false
+            let allBlocks = document.querySelectorAll('.colour-block')
+            for (let i=0; i < allBlocks.length; i++ ) {
+               allBlocks[i].classList.remove('active-class')
+             }
+
+            // location.reload()
         }
     }
  }
@@ -88,19 +103,24 @@ export default {
     }
 
     .colour-block {
-        height: 15vmax;
-        width: 15vmax;
+        height: 18vmax;
+        width: 18vmax;
         background: blue;
         text-align: center;
-        font-size: 2em;
+        font-size: 1.5em;
         color:white;
         cursor: pointer;
         margin: 0.3em;
     }
 
+    @media screen and (max-width: 400px){
+        .colour-block {
+            font-size: 1em;
+        }
+    }
+
     .colour-block h4 {
         background: black;
-
     }
 
     .active-class {
@@ -110,5 +130,6 @@ export default {
 
     .active-class h4 {
         background: black !important;
+        font-size: 1em;
     }
 </style>
