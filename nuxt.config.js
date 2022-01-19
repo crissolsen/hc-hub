@@ -18,18 +18,18 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "HomeCode is a web development and coding and robotics organisation based in Sedgefield, Western Cape. The Garden Route is where most of our business and homeschool clients reside."
+          "HomeCode is a coding and robotics education organisation based in Sedgefield, Western Cape. The Garden Route is where most of our business and homeschool clients reside."
       },
       {
         hid: "og:title",
         property: "og:title",
-        content: "HomeCode | Make life better with tech"
+        content: "HomeCode | Coding and Robotics Education"
       },
       {
         hid: "og:description",
         property: "og:description",
         content:
-          "HomeCode is a web development and coding and robotics organisation based in Sedgefield, Western Cape. The Garden Route is where most of our business and homeschool clients reside."
+          "HomeCode is a coding and robotics education organisation based in Sedgefield, Western Cape. The Garden Route is where most of our business and homeschool clients reside."
       },
       {
         hid: "og:image",

@@ -52,11 +52,11 @@
       </article>
       <article>
           <div class="education-content" id="lesson-plans">
-              <h2><a href= "https://teachingresources.co.za/vendors/mr-os-homecode-store/" rel="noreferrer" target="_blank">Lesson Plans</a></h2>
+              <h2><a href= "https://www.teachingresources.co.za/vendors/mr-os-homecode/" rel="noreferrer" target="_blank">Lesson Plans</a></h2>
               <p>You don't have to be an expert to run a lesson that uses coding to make thinking visible! We've made lesson plans that accompany <a href="https://www.youtube.com/channel/UCUtv80PwqNDHfvSMPcAXR_g" rel="noreferrer" target= "_blank">YouTube video tutorials</a> that you can purchase (for nice and cheap). If you've got a 
                 topic and want some help, <a href= "/contact-form" rel="noreferrer" target="_blank">give us a shout and we'll help</a>.
               </p>
-              <a href="https://teachingresources.co.za/vendors/mr-os-homecode-store/" target="_blank" rel="noreferrer"><div class="edu-button">Lesson Plans</div></a>
+              <a href="https://www.teachingresources.co.za/vendors/mr-os-homecode/" target="_blank" rel="noreferrer"><div class="edu-button">Lesson Plans</div></a>
          </div>
       </article>
       <article>

@@ -147,6 +147,8 @@ export default {
     width: 90%;
     margin: 0 auto;
   }
+
+
   
   #blog-title h1 {
     color: black;
@@ -240,10 +242,12 @@ export default {
 
   iframe {
     display: block;
-    min-width: 10%;
+    /* min-width: 300px; */
+    width: 80%;
     max-width: 80%;
     max-height: 800px;
     margin: 0 auto;
+    height: 400px;
   }
 
 </style>

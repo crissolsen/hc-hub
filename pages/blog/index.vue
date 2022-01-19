@@ -97,6 +97,7 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 0 0;
     }
 
     #blog-buttons-wrapper {
@@ -122,7 +123,7 @@ export default {
 
     #post-list-display {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         justify-items: center;
         grid-column-gap: 2em;
         grid-row-gap: 1em;

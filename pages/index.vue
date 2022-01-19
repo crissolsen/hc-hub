@@ -13,7 +13,7 @@
 <script>
 export default {
   head: {
-    title: "Serving you in tech"
+    title: "Coding and Robotics Education"
   }
 }
 </script>
