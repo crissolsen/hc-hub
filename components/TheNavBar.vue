@@ -36,10 +36,11 @@
         <NuxtLink to="/education#online-courses">Online Kids Coding Courses</NuxtLink>
         <NuxtLink to="/blog">Education Blog</NuxtLink>
         <NuxtLink to="/education#lesson-plans">Lesson Plans</NuxtLink>
+        <NuxtLink to="/#about-wrapper">About HomeCode</NuxtLink>
 
         <!-- <NuxtLink to="/webdev" >Web Development</NuxtLink> -->
         <NuxtLink id="contact-button" :to="`/contact-form`"
-          >We can help!</NuxtLink
+          >Need help?</NuxtLink
         >
       </div>
 
@@ -61,7 +62,7 @@
 
             <!-- <NuxtLink to="/webdev">Web Development</NuxtLink> -->
             <NuxtLink id="contact-button" :to="`/contact-form`"
-              >We can help!</NuxtLink
+              >Need help?</NuxtLink
             >
           </div>
         </transition>

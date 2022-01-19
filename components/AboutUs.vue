@@ -1,28 +1,28 @@
 <template>
     <div id="about-wrapper">
-        <h1>Welcome to HomeCode</h1>
-        <div id="show-more-button" @click= "showAboutUs=!showAboutUs">About Us</div>
+        <h1 style="margin-bottom: 0.3em" >Welcome to HomeCode</h1>
+        <!-- <div id="show-more-button" @click= "showAboutUs=!showAboutUs">About Us</div> -->
         <div id="about-us-show" v-if= "showAboutUs">
         <h2>What is HomeCode?</h2>
         <p>
-            HomeCode is a tech company that focuses on making lives better, in business and education. We develop websites and web apps that are fast, particular to your needs and really great looking.
+            HomeCode is a coding and robotics focused education company. 
             <br> <br>
-            You might also be interested in our education focus. Christopher Olsen (that's me by the way), is a fully qualified teacher with a BA Journalism, Hons Anthropology, 
-            Hons Theology and a Post Graduate Certificate in Education.
+            Christopher Olsen (that's me by the way), is a fully qualified teacher with a BA Journalism, Hons Anthropology, 
+            Hons Theology and a Post Graduate Certificate in Education with about 10 years worth of experience in schools and teaching.
         </p>
-        <h2>Why choose HomeCode?</h2>
+        <h2>Why choose Coding and Robotics</h2>
         <p>
-            We're not interested in taking on those big scary corporations (even though we help them out sometimes...). We care about helping you and your family. We want to meet. Make a cup of
-            coffee or a beetroot smoothie (if that's your thing). With our background in Anthropology, we know that getting to know you is essential to serving your needs. We care about you and your
-            family. 
-            <br ><br >
-            This is especially true if you are in our incredible home town of <a href="https://sedgefield.gohub.town" rel="noreferrer" target="_blank">Sedgefield</a>, or even in the Garden Route.
-            <br ><br >
-            <blockquote>We know our job isn't to sell you computers, a robotics kit and then duck out. We want to make your life better and tech - in education and web development, is the best
-                way we know how.</blockquote>
+            The goal of learning is problem solving. Whether it be a problem of how to express feelings or how to land a rover on Mars, there are ways to develop thinking skills to solve any possible problem.
+            In other words, learning is about learning how to learn. There are many ways to do this, but the best tool I have encountered for making thinking visible, collaboration, problem solving and having fun while learning
+            is with coding and robotics. 
+        </p>
+        <p>
+            If you're in the Garden Route area and want in person lessons, we have courses monthly and weekly classes. Be sure to reach out to find out when and where.
             <br><br>
-            We hope you enjoy exploring the site and if you ever need anything, or just want to say, "Hi", please don't hesitate to contact me directly at <a href="mailto:chris@homecode.co.za" rel="noreferrer"> chris@homecode.co.za</a>.
+            Prefer an online format? Take a look at the online coding courses which you can do at your pace (and remember you can reach out to me for help anytime).
             <br><br>
+            Or if you're a parent or teacher who is looking for lesson plans, you can tap here.
+        </p>
             Looking forward to helping you soon!
             <br><br>
             Christopher Olsen
@@ -37,7 +37,7 @@
 export default {
     data() {
         return {
-            showAboutUs: false
+            showAboutUs: true
         }
     }
 }
@@ -45,7 +45,8 @@ export default {
 
 <style scoped>
     #about-wrapper {
-        width: 90%;
+        width: 50%;
+        min-width: 300px;
         margin: 0 auto;
         /* box-shadow: 0.2em 0.4em 1em gray; */
         padding: 1em;
