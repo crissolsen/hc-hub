@@ -11,7 +11,7 @@
             viewBox="0 0 942 504"
           >
             <defs></defs>
-            <text class="cls-1" transform="translate(428 287.23)">home</text>
+            <text class="cls-1" transform="translate(428 287.23)">Home</text>
             <text class="cls-2" transform="translate(431 395.38)">CODE</text>
             <path
               class="cls-3"
