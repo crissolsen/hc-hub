@@ -1,7 +1,7 @@
 <template>
   <div id="social-wrapper">
     <a
-      href="https://facebook.com/homecodegeorge"
+      href="https://facebook.com/homecodesedge"
       target="_blank"
       rel="noreferrer"
       class="social-card"

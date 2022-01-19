@@ -14,7 +14,7 @@
         <label class="form-label" for="email">
           Email:
         </label>
-        <input class="form-field" name="_replyto" id="email" v-model= "email" />
+        <input type="email"  class="form-field" name="_replyto" id="email" v-model= "email" />
         <label class="form-label" for="message">
           How can we help?
         </label>
@@ -27,8 +27,9 @@
     <h1>Thank you for filling out that form. We look forward to chatting with you further.</h1>
     <h2>Before you go... why not subscribe to the monthly newsletter or meet us on social media?</h2>
 
+    </div>
     <MailChimpSignUp />
-    <SocialMediaLogos /></div>
+    <SocialMediaLogos />
   </div>
 </template>
 
@@ -64,12 +65,13 @@ export default {
 
 <style scoped>
     #form-wrapper {
-      width: 80%;
+      width: 40%;
+      min-width: 300px;
       margin: 0.5em auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 1em;
+      padding: 1em 0;
     }
     h1 {
       text-align: center;
@@ -85,16 +87,17 @@ export default {
     .content {
       display: flex;
       justify-content: center;
-      box-shadow: 1em 1em 2em gray;
+      /* box-shadow: 0 2em 0.5em gray; */
       padding: 0.5em;
-      border-radius: 2em;
+      border-bottom: 3px solid gray;
       padding-bottom: 2em;
     }
     .content form {
-      width: 80%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      padding: 1em;
     }
 
     .content input {

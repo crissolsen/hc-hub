@@ -17,11 +17,11 @@
             is with coding and robotics. 
         </p>
         <p>
-            If you're in the Garden Route area and want in person lessons, we have courses monthly and weekly classes. Be sure to reach out to find out when and where.
+            If you're in the Garden Route area and want in person lessons, we have courses monthly and weekly classes. <NuxtLink to="contact-form">Be sure to reach out to find out when and where.</NuxtLink>
             <br><br>
-            Prefer an online format? Take a look at the online coding courses which you can do at your pace (and remember you can reach out to me for help anytime).
+            Prefer an online format? Take a look at the <NuxtLink to="/education#online-courses">online coding courses</NuxtLink> which you can do at your pace (and remember you can reach out to me for help anytime).
             <br><br>
-            Or if you're a parent or teacher who is looking for lesson plans, you can tap here.
+            Or if you're a parent or teacher who is looking for lesson plans, <NuxtLink to="/education#lesson-plans">you can tap here for thinking skills and coding and robotics worksheets and lessons.</NuxtLink>
         </p>
             Looking forward to helping you soon!
             <br><br>
