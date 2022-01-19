@@ -19,7 +19,7 @@
       </div>
       <div id="post-list-display" >
           <div v-for="i in filteredPosts" :key= "i.slug" class="post-preview-block">
-            <NuxtLink :to="`/blog/${i.slug}`">
+            <NuxtLink :to="`/blog/${i.slug}`" >
                 <h2> {{ i.title }} </h2>
                 <img :src= "i.img" alt= "i.alt" >
             </NuxtLink>
@@ -122,26 +122,38 @@ export default {
 
     #post-list-display {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         justify-items: center;
-        grid-column-gap: 1em;
-        grid-row-gap: 0.5em;
+        grid-column-gap: 2em;
+        grid-row-gap: 1em;
     }
 
     .post-preview-block {
         padding: 1em;
-        box-shadow: 2px 0.5em 0.5em rgba(0,115,92,1);
+        box-shadow: 0 0.5em 0 rgba(0,115,92,1);
         border-bottom-right-radius: 5em;
+        transition: all 0.3s;
+    }
+
+    .post-preview-block:hover {
+      transform: translateY(3px);
+      box-shadow:inset 3px 3px 0 rgba(0,115,92,1);
+      border-bottom-right-radius: 0;
     }
 
     .post-preview-block img {
-        width: 100%;
+        max-height: 200px;
+        /* width: 100%; */
         border-radius: 5em;
         box-shadow: 0.4em 0.4em 0.4em gray;
         border: 2px solid white;
     }
 
-    .post-preview-block a{
+    .post-preview-block a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         text-decoration: none;
         color: rgba(0,115,92,1);
     }

@@ -108,7 +108,9 @@ export default {
         /* border: 2px solid black; */
         border: none;
         font-family: 'Comfortaa', sans-serif;
+        cursor: pointer;
     }
+
 
     .colour-block {
         height: 18vmax;

@@ -8,7 +8,7 @@
      </NuxtLink>
       <div v-show="!mobile" id="link-wrapper">
         <NuxtLink to="/education">Education</NuxtLink>
-        <NuxtLink to="/webdev" >Web Development</NuxtLink>
+        <!-- <NuxtLink to="/webdev" >Web Development</NuxtLink> -->
         <NuxtLink id="contact-button" :to= "`/contact-form`">We can help!</NuxtLink>
       </div>
       
@@ -21,7 +21,7 @@
         <transition name= "fade">
          <div v-show= "mobileMenu" id="mobile-links">
             <NuxtLink to="/education">Education</NuxtLink>
-            <NuxtLink to="/webdev">Web Development</NuxtLink>
+            <!-- <NuxtLink to="/webdev">Web Development</NuxtLink> -->
             <NuxtLink id="contact-button" :to= "`/contact-form`">We can help!</NuxtLink>
          </div>
         </transition>
@@ -120,6 +120,14 @@ nav {
   margin: 0.3em;
   /* box-shadow: 5px 5px 2px 2px #606462ff; */
   /* border: 1px solid black; */
+}
+
+a {
+  transition: all 0.2s;
+}
+
+a:hover {
+  transform: translateY(3px)
 }
 
 .fade-enter-active, .fade-leave-active {

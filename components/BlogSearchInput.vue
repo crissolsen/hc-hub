@@ -7,6 +7,7 @@
       placeholder="Search Posts"
     />
     <ul v-if="articles.length">
+      <div style="color: white">Results...</div>
       <li v-for="article of articles" :key="article.slug">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
           {{ article.title }}
@@ -42,6 +43,7 @@
 <style scoped>
     #search-bar {
         display: flex;
+        flex-direction: column;
         justify-content: flex-end;
         width: 50%;
         margin: 0 auto;
@@ -56,17 +58,24 @@
     ul {
       background: rgba(0,115,92,1);
       padding: 0.3em;
-      border-radius: 5%;
     }
 
     li a {
       color: white;
       text-decoration: none;
+      
     }
 
     li {
-      list-style-position: inside;
+      list-style-position: none;
       color: white;
       padding: 1em;
+      margin: 5px 5px;
+      border: 1px solid white;
+      transition: all 0.3s;
+    }
+
+    li:hover {
+      transform: translateY(3px)
     }
 </style>
