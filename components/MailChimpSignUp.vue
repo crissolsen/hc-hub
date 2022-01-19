@@ -43,7 +43,7 @@
         /* border: 2px solid black; */
         font-family: 'Comfortaa', sans-serif;
         border-radius: 0.4em;
-
+        cursor: pointer;
     }
     #mc_embed_signup .email {
         width: 80%;
