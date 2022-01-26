@@ -4,7 +4,7 @@
 <div id="mc_embed_signup">
 <form action="https://homecode.us2.list-manage.com/subscribe/post?u=b12be6ea5a17c202cd54fba61&amp;id=6b3a79bd1a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Subscribe to our monthly newsletter for deals, tips and giveaways</label>
+	<label for="mce-EMAIL">Subscribe to our monthly newsletter for course updates, tips and giveaways</label>
 	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b12be6ea5a17c202cd54fba61_6b3a79bd1a" tabindex="-1" value=""></div>

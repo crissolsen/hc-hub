@@ -3,8 +3,8 @@
     <div id="hide-h1"><h1>HomeCode Web Development and Coding and Robotics Education</h1></div>
     <TheNavBar />
     <AnotherHero />
-    <AboutUs />
     <MailChimpSignUp />
+    <AboutUs />
     <SocialMediaLogos />
 
   </div>
