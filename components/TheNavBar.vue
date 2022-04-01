@@ -35,7 +35,8 @@
       <div v-show="!mobile" id="link-wrapper">
         <NuxtLink to="/education#online-courses">Online Kids Coding Courses</NuxtLink>
         <NuxtLink to="/blog">Education Blog</NuxtLink>
-        <NuxtLink to="/education#lesson-plans">Lesson Plans</NuxtLink>
+        <!-- <NuxtLink to="/education#lesson-plans">Lesson Plans</NuxtLink> -->
+        <NuxtLink to="/edu-space">Education Space</NuxtLink>
         <NuxtLink to="/#about-wrapper">About HomeCode</NuxtLink>
 
         <!-- <NuxtLink to="/webdev" >Web Development</NuxtLink> -->
@@ -58,7 +59,8 @@
           <div v-show="mobileMenu" id="mobile-links">
             <NuxtLink to="/education#online-courses">Online Kids Coding Courses</NuxtLink>
             <NuxtLink to="/blog">Education Blog</NuxtLink>
-            <NuxtLink to="/education#lesson-plans">Lesson Plans</NuxtLink>
+            <!-- <NuxtLink to="/education#lesson-plans">Lesson Plans</NuxtLink> -->
+            <NuxtLink to="/edu-space">Education Space</NuxtLink>
 
             <!-- <NuxtLink to="/webdev">Web Development</NuxtLink> -->
             <NuxtLink id="contact-button" :to="`/contact-form`"
