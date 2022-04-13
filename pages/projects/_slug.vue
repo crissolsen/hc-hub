@@ -5,7 +5,7 @@
     <main>
       <div id="blog-title">
         <h1>{{ post.title }}</h1>
-        <MailChimpSignUp />
+        <!-- <MailChimpSignUp /> -->
       </div>
 
       <nuxt-content :document="post" />
