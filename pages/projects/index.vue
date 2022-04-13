@@ -19,7 +19,7 @@
       </div>
       <div id="post-list-display" >
           <div v-for="i in filteredPosts" :key= "i.slug" class="post-preview-block">
-            <NuxtLink :to="`/blog/${i.slug}`" >
+            <NuxtLink :to="`/projects/${i.slug}`" >
                 <h2> {{ i.title }} </h2>
                 <img :src= "i.img" alt= "i.alt" >
             </NuxtLink>
