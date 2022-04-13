@@ -2,7 +2,8 @@
   <div>
     <TheNavBar />
     <BlogSearchInput />
-    <main>
+    <main class="blog-post-wrapper">
+        <h1>Products coming soon...</h1>
       <div id="blog-title">
         <h1>{{ post.title }}</h1>
         <!-- <MailChimpSignUp /> -->

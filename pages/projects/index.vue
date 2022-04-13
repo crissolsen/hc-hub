@@ -5,8 +5,9 @@
     <main id="page-wrapper">
       <div id="main-blog-title">
         <h1>Projects from HomeCode Products</h1>
+        <h2>Products coming soon...</h2>
       </div>
-      <div id="blog-buttons-wrapper">
+      <!-- <div id="blog-buttons-wrapper">
         <div
           class="blog-category-choose-button"
           @click="filterResults('thinkingSkills')"
@@ -16,7 +17,7 @@
           @click="filterResults('codingRobotics')"
         >Coding and Robotics</div>
         <div class="blog-category-choose-button" @click= "filterResults('all')">All</div>
-      </div>
+      </div> -->
       <div id="post-list-display" >
           <div v-for="i in filteredPosts" :key= "i.slug" class="post-preview-block">
             <NuxtLink :to="`/projects/${i.slug}`" >
@@ -90,6 +91,9 @@ export default {
 <style scoped>
     h1 {
         font-size: 3em;
+        text-align: center;
+    }
+    h2 {
         text-align: center;
     }
 

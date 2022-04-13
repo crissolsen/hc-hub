@@ -2,7 +2,7 @@
   <div>
     <TheNavBar />
     <BlogSearchInput />
-    <main>
+    <main class="blog-post-wrapper">
       <div id="blog-title">
         <h1>{{ post.title }}</h1>
         <!-- <MailChimpSignUp /> -->
@@ -148,6 +148,10 @@ main {
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
+}
+
+.blog-post-wrapper {
+  max-width: 700px;
 }
 
 #blog-title h1 {
