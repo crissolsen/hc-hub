@@ -99,7 +99,7 @@ export default {
         .fetch();
 
       return files.map(file =>
-        file.path === "/blog/index" ? "/" : "/blog/" + file.slug || file.path === "projects/index" ? "/" : "projects" + file.slug
+        file.path === "/blog/index" ? "/" : "/blog/" + file.slug || file.path === "/projects/index" ? "/" : "/projects/" + file.slug
       );
     }
   }
