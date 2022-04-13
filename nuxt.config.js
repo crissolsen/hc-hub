@@ -95,11 +95,17 @@ export default {
     async routes() {
       const { $content } = require("@nuxt/content");
       const files = await $content({ deep: true })
-        .only(["slug"])
+        .only(["slug", "dir"])
         .fetch();
 
-      return files.map(file =>
-        file.path === "/blog/index" ? "/" : "/blog/" + file.slug || file.path === "/projects/index" ? "/" : "/projects/" + file.slug
+      return files.map(file => {
+      //  console.log(file) 
+        if (file.dir === "/posts") {
+          return "/blog/" + file.slug
+        } else {
+          return "/projects/" + file.slug
+        }
+      }
       );
     }
   }
