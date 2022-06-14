@@ -30,7 +30,7 @@ export default {
     methods: {
         async getThatData() {
             // const courses = await this.$axios.get("http://localhost:8888/.netlify/functions/fetch-courses?classes=learners")
-            const courses = await this.$axios.get("http://homecode.co.za/.netlify/functions/fetch-courses?classes=learners")
+            const courses = await this.$axios.get("https://homecode.co.za/.netlify/functions/fetch-courses?classes=learners")
 
             .then(res => this.courses = res.data)
             .catch(e => console.error(e))
