@@ -1,7 +1,7 @@
 const fetch = require('node-fetch')
 
 const handler = async function (event, context, callback) {
-
+  console.log("Have got this far!")
   try {
     const type = event.queryStringParameters.classes
 
