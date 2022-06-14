@@ -15,7 +15,7 @@
     <h2>
         Friday Coding and Robotics Clubs: <a href="http://scratch.mit.edu/signup/t2jjtcfkr">Join Class</a>
     </h2>
-    {{ courses }}
+    {{ courses}}
 </main>
 </div>
 </template>
