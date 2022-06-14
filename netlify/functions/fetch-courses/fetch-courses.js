@@ -12,6 +12,7 @@ const handler = async function (event, context, callback) {
     const response = await fetch(`${url}${typeSearch}`, {
       headers: { Accept: 'application/json', 'xc-auth': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRldkBob21lY29kZS5jby56YSIsImZpcnN0bmFtZSI6bnVsbCwibGFzdG5hbWUiOm51bGwsImlkIjoidXNfMm11OGN0cXlpMXZlajUiLCJyb2xlcyI6InVzZXIsc3VwZXIiLCJpYXQiOjE2NTUyMDQ4NzF9.rNpcxdGzO8Gp9X9lXYrKIAiyCIiHi1G2-yzmCY89cUU' },
     })
+    console.log(response)
     if (!response.ok) {
       // NOT res.status >= 200 && res.status < 300
       return { statusCode: response.status, body: response.statusText }
