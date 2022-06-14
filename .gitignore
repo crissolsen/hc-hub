@@ -90,3 +90,6 @@ sw.*
 *.swp
 
 unused
+
+# Local Netlify folder
+.netlify

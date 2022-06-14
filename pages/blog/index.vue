@@ -100,6 +100,10 @@ export default {
         margin: 0 0;
     }
 
+    #page-wrapper {
+      margin: 0 auto;
+    }
+
     #blog-buttons-wrapper {
         display: flex;
         justify-content: space-around;
